@@ -15,3 +15,6 @@ git add .
 git status
 git commit -m "update index with new photos"
 git push origin master
+
+--ideas
+https://app.ewedding.com/demo?theme=juliette&style=theme-brown
