@@ -202,11 +202,22 @@
     background: url(../img/photo1.jpg) no-repeat center center;
     background-size: cover; }
 
-
   #map {
         width: 600px;
         height: 600px;
       }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #map {
+        width: 300px;
+        height:300px;
+      }
+}
+
 
 .polaroid {
   position: relative;
