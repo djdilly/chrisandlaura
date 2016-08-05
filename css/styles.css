@@ -69,6 +69,13 @@
 
   .parallax__layer--back {
     -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-60px) scale(1.20);
+    z-index: 3;
+    left:-10px;
+  }
+
+  .parallax__layer--back_old {
+    -webkit-transform: translateZ(-300px) scale(2);
     transform: translateZ(-300px) scale(2);
     z-index: 3;
     left:-10px;

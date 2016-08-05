@@ -1,10 +1,12 @@
       function initMap() {
         var mapDiv = document.getElementById('map');
-        var myLatLng = {lat: 51.804299, lng: 0.6837479};
+        var myLatLng = {lat: 51.806100, lng: 0.6891120};
         var map = new google.maps.Map(mapDiv, {
             center: myLatLng,
             zoom: 15,
-            disableDefaultUI: true
+            disableDefaultUI: true,
+            draggable: false,
+            scrollwheel: false
         });
 
         var marker = new google.maps.Marker({
