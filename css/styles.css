@@ -193,9 +193,18 @@
   /* Misc
   --------------------------------------------- */
 
-  #group2 .bcg {
-    background: url(../img/photo1.jpg) no-repeat center center;
+@media all and (orientation:portrait) {
+    #group2 .bcg {
+    background: url(../img/photo1_tall.jpg) no-repeat center center;
     background-size: cover; }
+}
+@media all and (orientation:landscape) {
+    #group2 .bcg {
+    background: url(../img/photo1_superwide.jpg) no-repeat center center;
+    background-size: cover;
+    }
+}
+
    #group5 .bcg {
     background: url(../img/seamless-white-paper-texture-foy7ea0um.jpg) no-repeat center center;
     background-size: cover; }
