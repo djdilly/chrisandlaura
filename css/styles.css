@@ -23,7 +23,7 @@
   #group5b .bcg {
     background: url(../img/photo2_tall.jpg) no-repeat center center;
     background-size: cover; }
-  .no_mobile_or_landscape {
+  .no-show-on-portrait {
   display: none
   }
 }
@@ -38,6 +38,9 @@
   #group5b .bcg {
     background: url(../img/photo2_superwide.jpg) no-repeat center center;
     background-size: cover; }
+  .no-show-on-landscape {
+  display: none
+  }
 }
 
    #group5 .bcg {
@@ -61,7 +64,7 @@
 }
 
 .white-frame img {
-    border: 10px solid #fff;
+    border: 20px solid #fff;
 }
 
 .polaroid {
