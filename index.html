@@ -7,12 +7,6 @@
       <link rel="stylesheet" href="css/styles.css">
       <link rel="stylesheet" href="css/parallax.css">
 
-  <!-- Latest compiled and minified bootstrap css, js & optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- end bootstrap -->
-
   <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -23,13 +17,15 @@
 
     <div id="group2" class="parallax__group_old no-show-on-landscape">
       <div class="parallax__layer parallax__layer--base bcg">
+<!--         <div id="blackOverlay">
+        </div> -->
       </div>
     </div>
     <div id="group2b" class="parallax__group_old no-show-on-portrait">
       <div class="parallax__layer parallax__layer--base">
         <br>
         <br>
-        <br>
+        <br>        <br>
         <br>
         <br>
         <br>
@@ -40,27 +36,20 @@
       </div>
     </div>
 
-        <div id="group5" class="parallax__group">
+     <div id="group5" class="parallax__group">
       <div class="parallax__layer parallax__layer--base">
-        <div class="container-fluid">
-          <br/>
-          <br/>
-          <div class="row">
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-6">
               <div class="polaroid">
   <p>place</p>
+
                 <div id="map"></div>
               </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
     <div id="group4" class="parallax__group_old">
-      <div class="parallax__layer parallax__layer--back bcg">
+      <div class="parallax__layer parallax__layer--back bcg">       
+        <div id="blackOverlay">
+        </div>
       </div>
     </div>
     <div id="group5" class="parallax__group_medium">
@@ -95,7 +84,11 @@
     </div>
   </div>
 
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+<!--     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
     <script src="js/main.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmtcKKHuckL5-eSuFO7ITb4QLpPpUF0kw&callback=initMap">
