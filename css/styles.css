@@ -1,3 +1,4 @@
+
 #blackOverlay1,
 #blackOverlay2,
 #blackOverlay3 {
@@ -121,14 +122,24 @@ img.displayed {
 .polaroid2 {
   position: relative;
 
-  height: 300px;
-  width: 300px;
+  height: 355px;
+  width: 260px;
 
     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
+
+
+  -webkit-transition: -webkit-transform .15s linear;
+}
+
+.polaroid2:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
 }
 
 .polaroid2 img {
@@ -139,7 +150,56 @@ img.displayed {
           box-shadow: 3px 3px 3px #777;
 
   height: 260px;
-  width: 260px
+  width: 260px;
+}
+
+.polaroid2 p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  bottom: 0px;
+  font: 400 20px/1 'Kaushan Script', cursive;
+  color: #888;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+ .polaroid2 {
+  position: relative;
+
+  height: 20%;
+  width: 20%;
+
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+
+  -webkit-transition: -webkit-transform .15s linear;
+}
+
+.polaroid2:hover {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  position: relative;
+
+  z-index: 5;
+}
+
+.polaroid2 img {
+  border: 3px solid #fff;
+  border-bottom: 20px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+
+  height: 100%;
+  width: 100%;
 }
 
 .polaroid2 p {
@@ -147,9 +207,13 @@ img.displayed {
   text-align: center;
   width: 100%;
   bottom: 0px;
-  font: 400 18px/1 'Kaushan Script', cursive;
+  font: 400 7px/1 'Kaushan Script', cursive;
+/*   color: #888; */
   color: #888;
 }
+}
+
+
 
 ul.polaroids a:after {
   content: attr(title);
@@ -213,6 +277,10 @@ ul.polaroids a {
 ul.polaroids a {
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+
+ul img {
+  width: 170px;
 }
 
 
