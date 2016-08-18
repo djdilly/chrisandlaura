@@ -71,25 +71,12 @@
         height: 100%;
       }
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-/*   #map {
-        width: 100%;
-        height: 100%;
-      } */
-}
-
-.white-frame img {
-    border: 20px solid #fff;
-}
-
 .polaroid {
-  position: relative;
-        width: 50%;
-        height: 50%;
+    padding-top:30px;
+    right:50px;
+  position: absolute;
+        width: 300px;
+        height: 300px;
 }
 
 .polaroid > div{
@@ -107,6 +94,31 @@
   bottom: 0px;
   font: 400 18px/1 'Kaushan Script', cursive;
   color: #888;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 700px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .polaroid {
+    padding-top:10px;
+    right:20px;
+    position: absolute;
+          width: 120px;
+          height: 120px;
+
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  }
+
+}
+
+.white-frame img {
+    border: 20px solid #fff;
 }
 
 a[href^="http://maps.google.com/maps"]{display:none !important}
@@ -131,14 +143,16 @@ img.displayed {
   height: 310px;
   width: 260px;
 
-    -webkit-transform: rotate(-3deg);
+/*     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
+    transform: rotate(-3deg); */
 
 
   -webkit-transition: -webkit-transform .15s linear;
+
+   display: block; margin-left: auto; margin-right: auto;
 }
 
 .polaroid2:hover {
@@ -169,6 +183,46 @@ img.displayed {
   color: #888;
 }
 
+.turnR5 {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.turnL6 {
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+
+.turnL2 {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+.turnL1-25 {
+  -webkit-transform: rotate(1.25deg);
+  -moz-transform: rotate(1.25deg);
+  -o-transform: rotate(1.25deg);
+  -ms-transform: rotate(1.25deg);
+  transform: rotate(1.25deg);
+}
+
+/* Rotate every fifth image by 5 degrees and offset it */
+#album div.polaroid2:nth-child(5n) a {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  right: 5px;
+}
+
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 700px)
@@ -180,13 +234,9 @@ img.displayed {
   height: 80%;
   width: 80%;
 
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-
   -webkit-transition: -webkit-transform .15s linear;
+
+   display: block; margin-left: auto; margin-right: auto;
 }
 
 .polaroid2:hover {
@@ -199,7 +249,7 @@ img.displayed {
 
 .polaroid2 img {
   border: 3px solid #fff;
-  border-bottom: 20px solid #fff;
+  border-bottom: 12px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;
      -moz-box-shadow: 3px 3px 3px #777;
           box-shadow: 3px 3px 3px #777;
@@ -212,8 +262,8 @@ img.displayed {
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: -20px;
-  font: 400 7px/1 'Kaushan Script', cursive;
+  bottom: -25px;
+  font: 400 5px/1 'Kaushan Script', cursive;
 /*   color: #888; */
   color: #888;
 }
