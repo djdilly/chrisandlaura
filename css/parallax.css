@@ -115,10 +115,13 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    font-family: 'Rochester', cursive;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
+  .body {
+    font-family: 'Rochester', cursive;
+  }
 
 
   /* style the groups
@@ -139,7 +142,7 @@
     z-index: 3; /* slide under groups 1 and 3 */
   }
   #group2b .parallax__layer--base {
-    background: rgb(168, 151, 135);
+    background: #B8CDC2;
   }
 
   #group3 {
