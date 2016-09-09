@@ -13,7 +13,7 @@
     perspective-origin-x: 100%;
 }
 
-.parallax__group {
+.parallax__group_littleshort {
     position: relative;
     height: 400px;
     /* fallback for older browsers */
@@ -22,7 +22,7 @@
     transform-style: preserve-3d;
 }
 
-.parallax__group_old {
+.parallax__group_fullview {
     position: relative;
     height: 500px;
     /* fallback for older browsers */
@@ -31,7 +31,7 @@
     transform-style: preserve-3d;
 }
 
-.parallax__group_small {
+.parallax__group_veryshort {
     position: relative;
     height: 175px;
     /* fallback for older browsers */
@@ -40,7 +40,7 @@
     transform-style: preserve-3d;
 }
 
-.parallax__group_medium {
+.parallax__group_quiteshort {
     position: relative;
     height: 350px;
     /* fallback for older browsers */
@@ -92,8 +92,100 @@
     left: -15px;
 }
 
+/* style the groups - z-index allows groups to slide under and over eachother
+  --------------------------------------------- */
 
-/* demo styles
+#groupTitlePotrait {
+    z-index: 3;
+}
+
+#groupTitleLandscape .parallax__layer--base {
+    background: #B8CDC2;
+}
+
+#groupAboutUs {
+    z-index: 3;
+}
+
+#groupAboutUs .parallax__layer--base {
+    background: rgb(168, 151, 135);
+}
+
+#groupBlank {
+    z-index: 3;
+}
+
+#groupBlank .parallax__layer--base {
+    background: rgb(168, 151, 135);
+}
+
+#groupPolaroids {
+    z-index: 3;
+}
+
+#groupPolaroids .parallax__layer--base {
+    background: rgb(95, 85, 81);
+}
+
+#groupPic2 {
+    z-index: 2;
+}
+
+#groupPic2 .parallax__layer--deep {
+    background: #cde7dc;
+}
+
+#groupPic3 {
+    z-index: 2;
+}
+
+/* give some the groups full div pictures using background url
+  --------------------------------------------- */
+
+@media all and (orientation:portrait) {
+    #groupTitlePotrait .bcg {
+        background: url(../img/photo1_tall.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #groupPic2 .bcg {
+        background: url(../img/photo3_tall.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #groupPic3 .bcg {
+        background: url(../img/photo2_tall.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #group5venue .bcg {
+        background: url(../img/braxted_tall.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
+@media all and (orientation:landscape) {
+    #groupTitleLandscape .bcg {
+        background: url(../img/photo1_superwide.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #groupPic2 .bcg {
+        background: url(../img/photo3_superwide.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #groupPic3 .bcg {
+        background: url(../img/photo2_superwide.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #group5venue .bcg {
+        background: url(../img/braxted.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
+#groupAboutUs .bcg {
+    background: url(../img/seamless-white-paper-texture-foy7ea0um.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* misc styles
   --------------------------------------------- */
 
 body,
@@ -114,7 +206,6 @@ body {
     font-size: 200%;
 }
 
-
 /* centre the content in the parallax layers */
 
 .title {
@@ -129,80 +220,4 @@ body {
 
 .body {
     font-family: 'Rochester', cursive;
-}
-
-/* style the groups
-  --------------------------------------------- */
-
-#group2 {
-    z-index: 3;
-    /* slide under groups 1 and 3 */
-}
-
-#group2 {
-    z-index: 3;
-    /* slide under groups 1 and 3 */
-}
-
-#group2b .parallax__layer--base {
-    background: #B8CDC2;
-}
-
-#group3 {
-    z-index: 4;
-    /* slide over group 2 and 4 */
-}
-
-#group3 .parallax__layer--base {
-    background: rgb(95, 85, 81);
-}
-
-#group4 {
-    z-index: 2;
-    /* slide under group 3 and 5 */
-}
-
-#group4 .parallax__layer--deep {
-    background: #cde7dc;
-}
-
-#group5 {
-    z-index: 3;
-    /* slide over group 4 and 6 */
-}
-
-#group5 .parallax__layer--base {
-    background: rgb(168, 151, 135);
-}
-
-#group5b {
-    z-index: 2;
-    /* slide over group 4 and 6 */
-}
-
-#group5c {
-    z-index: 3;
-    /* slide over group 4 and 6 */
-}
-
-#group5c .parallax__layer--base {
-    background: rgb(95, 85, 81);
-}
-
-#group6 {
-    z-index: 1;
-    /* slide under group 5 and 7 */
-}
-
-#group6 .parallax__layer--back {
-    background: rgb(252, 213, 194);
-}
-
-#group7 {
-    z-index: 3;
-    /* slide over group 7 */
-}
-
-#group7 .parallax__layer--base {
-    background: #ffe4e1;
 }

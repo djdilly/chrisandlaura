@@ -1,3 +1,5 @@
+/* blackOverlay for fading
+  --------------------------------------------- */
 #blackOverlay1,
 #blackOverlay2,
 #blackOverlay3 {
@@ -10,58 +12,8 @@
     z-index: 1001;
 }
 
-/* Misc
+/* google map styles
   --------------------------------------------- */
-
-@media all and (orientation:portrait) {
-    #group2 .bcg {
-        background: url(../img/photo1_tall.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #group4 .bcg {
-        background: url(../img/photo3_tall.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #group5b .bcg {
-        background: url(../img/photo2_tall.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #group5venue .bcg {
-        background: url(../img/braxted_tall.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    .no-show-on-portrait {
-        display: none
-    }
-}
-
-@media all and (orientation:landscape) {
-    #group2 .bcg {
-        background: url(../img/photo1_superwide.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #group4 .bcg {
-        background: url(../img/photo3_superwide.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #group5b .bcg {
-        background: url(../img/photo2_superwide.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #group5venue .bcg {
-        background: url(../img/braxted.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    .no-show-on-landscape {
-        display: none
-    }
-}
-
-#group5 .bcg {
-    background: url(../img/seamless-white-paper-texture-foy7ea0um.jpg) no-repeat center center;
-    background-size: cover;
-}
-
 .polaroid-map {
     padding-top: 30px;
     right: 50px;
@@ -106,10 +58,6 @@
     }
 }
 
-.white-picture-frame img {
-    border: 20px solid #fff;
-}
-
 a[href^="http://maps.google.com/maps"] {
     display: none !important
 }
@@ -118,8 +66,26 @@ a[href^="https://maps.google.com/maps"] {
     display: none !important
 }
 
+/* misc
+  --------------------------------------------- */
+.white-picture-frame img {
+    border: 20px solid #fff;
+}
+
 img.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+
+@media all and (orientation:portrait) {
+    .no-show-on-portrait {
+        display: none
+    }
+}
+
+@media all and (orientation:landscape) {
+    .no-show-on-landscape {
+        display: none
+    }
 }
