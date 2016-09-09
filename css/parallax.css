@@ -13,6 +13,9 @@
     perspective-origin-x: 100%;
 }
 
+/* Parallax groups/cards - mostly just sets height
+  --------------------------------------------- */
+
 .parallax__group_littleshort {
     position: relative;
     height: 400px;
@@ -49,6 +52,9 @@
     transform-style: preserve-3d;
 }
 
+/* Parallax layers - sets the depths
+  --------------------------------------------- */
+
 .parallax__layer {
     position: absolute;
     top: 0;
@@ -78,7 +84,7 @@
     left: -10px;
 }
 
-.parallax__layer--back_old {
+.parallax__layer--further-back {
     -webkit-transform: translateZ(-300px) scale(2);
     transform: translateZ(-300px) scale(2);
     z-index: 3;
@@ -143,44 +149,44 @@
   --------------------------------------------- */
 
 @media all and (orientation:portrait) {
-    #groupTitlePotrait .bcg {
+    #groupTitlePotrait .background-image {
         background: url(../img/photo1_tall.jpg) no-repeat center center;
         background-size: cover;
     }
-    #groupPic2 .bcg {
+    #groupPic2 .background-image {
         background: url(../img/photo3_tall.jpg) no-repeat center center;
         background-size: cover;
     }
-    #groupPic3 .bcg {
+    #groupPic3 .background-image {
         background: url(../img/photo2_tall.jpg) no-repeat center center;
         background-size: cover;
     }
-    #group5venue .bcg {
+    #group5venue .background-image {
         background: url(../img/braxted_tall.jpg) no-repeat center center;
         background-size: cover;
     }
 }
 
 @media all and (orientation:landscape) {
-    #groupTitleLandscape .bcg {
+    #groupTitleLandscape .background-image {
         background: url(../img/photo1_superwide.jpg) no-repeat center center;
         background-size: cover;
     }
-    #groupPic2 .bcg {
+    #groupPic2 .background-image {
         background: url(../img/photo3_superwide.jpg) no-repeat center center;
         background-size: cover;
     }
-    #groupPic3 .bcg {
+    #groupPic3 .background-image {
         background: url(../img/photo2_superwide.jpg) no-repeat center center;
         background-size: cover;
     }
-    #group5venue .bcg {
+    #group5venue .background-image {
         background: url(../img/braxted.jpg) no-repeat center center;
         background-size: cover;
     }
 }
 
-#groupAboutUs .bcg {
+#groupAboutUs .background-image {
     background: url(../img/seamless-white-paper-texture-foy7ea0um.jpg) no-repeat center center;
     background-size: cover;
 }

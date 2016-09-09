@@ -1,8 +1,7 @@
 /* blackOverlay for fading
   --------------------------------------------- */
-#blackOverlay1,
-#blackOverlay2,
-#blackOverlay3 {
+.blackOverlay2,
+.blackOverlay3 {
     background-color: #000;
     opacity: 0.0;
     position: absolute;
