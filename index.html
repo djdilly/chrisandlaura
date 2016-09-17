@@ -10,10 +10,14 @@
 	<link rel="stylesheet" href="css/polaroids.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+
 </head>
 
 <body>
-	<div class="parallax">
+
+	<div id="parallax" class="parallax">
 
 		<!--START of Title Section-->
 		<div id="groupTitlePotrait" class="parallax__group_fullview no-show-on-landscape">
@@ -26,9 +30,12 @@
 
 		<div id="groupTitleLandscape" class="parallax__group_fullview no-show-on-portrait">
 			<div class="parallax__layer parallax__layer--base">
+        <div style='height:10vh;'>
+        </div>
 				<div class="white-picture-frame">
-					<img class="displayed" style='width:60%;' src="/img/photo1_superwide.jpg" />
-				</div>
+          <div id="titlePicture">
+          </div>
+        </div>
 			</div>
 		</div>
 		<!--END of Title Section-->
@@ -121,12 +128,13 @@
 			<div class="parallax__layer parallax__layer--base">
 			</div>
 		</div>
+    <div id="groupBlank" class="parallax__group_littleshort">
+			<div class="parallax__layer parallax__layer--base background-image">
+				<div id="map" class="map"></div>
+      </div>
+    </div>
 		<div id="group5venue" class="parallax__group_quiteshort">
 			<div class="parallax__layer parallax__layer--base background-image">
-				<div class="polaroid-map">
-					<p>place</p>
-					<div id="map" class="map"></div>
-				</div>
 			</div>
 		</div>
 		<div id="groupBlank" class="parallax__group_veryshort">
@@ -198,6 +206,7 @@
 	<!-- Include the jQuery Mobile library -->
 	<!--     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 	<script src="js/main.js"></script>
+  <script src="js/maps.js"></script>
 	<script src="js/parallax.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmtcKKHuckL5-eSuFO7ITb4QLpPpUF0kw&callback=initMap">
 	</script>
