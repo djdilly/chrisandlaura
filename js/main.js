@@ -1,9 +1,10 @@
 $(window).load(function() {
 
+  var height = $(window).height() / 2;
   //initialize scrollreveal
   window.sr = ScrollReveal({
     // 'bottom', 'left', 'top', 'right'
-    origin: 'left',
+    origin: 'bottom',
 
     // Can be any valid CSS distance, e.g. '5rem', '10%', '20vw', etc.
     distance: '5vw',
@@ -49,7 +50,7 @@ $(window).load(function() {
     // e.g. Set `{ top: 48 }`, if you have a 48px tall fixed toolbar.
     // --
     // Visual Aid: https://scrollrevealjs.org/assets/viewoffset.png
-    viewOffset: { top: 0, right: 0, bottom: 300, left: 0 },
+    viewOffset: { top: -1000, right: 0, bottom: height, left: 0 },
 
     // Callbacks that fire for each triggered element reveal, and reset.
     beforeReveal: function (domEl) {},
@@ -63,7 +64,11 @@ $(window).load(function() {
   // #parallax will be the main container
   var parallaxDiv = document.getElementById('parallax');
 
-  sr.reveal('.title', { container: parallaxDiv, duration: "4000" });
-  $(".title").css("visibility","visible");
+  sr.reveal('.sr', { container: parallaxDiv, duration: "4000" });
+  $(".sr").css("visibility","visible");
+
+  window.onresize = function(){ location.reload(); }
 
 });
+
+

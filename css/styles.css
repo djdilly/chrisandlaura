@@ -1,3 +1,33 @@
+
+.title {
+    padding: 3rem;
+    text-align: center;
+    width 100%;
+    font-family: 'Rochester', cursive;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.body {
+    font-family: 'Rochester', cursive;
+}
+
+.parallax {
+  font-size: 200%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+    .parallax {
+        font-size: 100%;
+    }
+}
+
+/* hide scrollReveal text until resources loaded
+  --------------------------------------------- */
+.sr {
+    visibility:hidden;
+}
+
 /* blackOverlay for fading
   --------------------------------------------- */
 .blackOverlay2,
@@ -91,13 +121,13 @@ img.displayed {
 }
 
 @media all and (orientation:portrait) {
-    .no-show-on-portrait {
+    .hide-when-portrait {
         display: none
     }
 }
 
 @media all and (orientation:landscape) {
-    .no-show-on-landscape {
+    .hide-when-landscape {
         display: none
     }
 }

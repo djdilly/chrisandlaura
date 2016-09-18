@@ -207,23 +207,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
-.parallax {
-    font-size: 200%;
-}
-
-/* centre the content in the parallax layers */
-
-.title {
-    padding: 3rem;
-    text-align: center;
-    width 100%;
-    font-family: 'Rochester', cursive;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    visibility:hidden;
-}
-
-.body {
-    font-family: 'Rochester', cursive;
-}
