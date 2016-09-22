@@ -1,4 +1,4 @@
-.polaroids {
+/* .polaroids {
     position: relative;
     height: 310px;
     width: 260px;
@@ -6,7 +6,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .polaroids:hover {
     -webkit-transform: scale(1.25);
@@ -14,6 +14,99 @@
     position: relative;
     z-index: 5;
 }
+
+.polaroids {
+    position: relative;
+    height: 18vh;
+    width: 15vw;
+    -webkit-transition: -webkit-transform .15s linear;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.polaroids .pol-1 {
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+    background: url("../img/photo1.jpg") no-repeat center center;
+    background-size: cover;
+    height: 15vh;
+    width: 15vw;
+}
+
+  .polaroids p {
+      position: absolute;
+      vertical-align: bottom;
+      text-align: center;
+      width: 100%;
+      height: 30px;
+      bottom: 0px;
+      font: 400 20px/1 'Kaushan Script', cursive;
+      color: #888;
+  }
+
+.square {
+    position: relative;
+    display: block; /* could be float */
+    width: 70%;
+    border: 10px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    -webkit-transition: -webkit-transform .25s linear;
+    margin-left: auto;
+    margin-right: auto;
+}
+.square:hover {
+    -webkit-transform: scale(1.75);
+    -moz-transform: scale(1.75);
+    z-index: 5;
+}
+.sq-setter-w {
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+}
+.sq-setter-h {
+    width: auto;
+    height: 100%;
+    visibility: hidden;
+}
+.sq-content {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.sq-footer {
+/*     position: absolute;
+    bottom: -10;
+    margin-left: auto;
+    margin-right: auto; */
+
+
+      position: absolute;
+      z-index: 2;
+      vertical-align: bottom;
+      text-align: center;
+      width: 100%;
+      bottom: 0px;
+      font: 1px 'Kaushan Script', cursive;
+      color: #888;
+}
+
+/* just for display */
+.sq-setter-w + .sq-content {
+    background: url("../img/photo1.jpg") no-repeat center center;
+    background-size: cover;}
+.sq-setter-h + .sq-content {
+    background: url("../img/photo1.jpg") no-repeat center center;
+    background-size: cover;}
+
 
 .polaroids img {
     border: 10px solid #fff;
@@ -25,7 +118,7 @@
     width: 260px;
 }
 
-.polaroids p {
+/* .polaroids p {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -33,7 +126,7 @@
     bottom: 0px;
     font: 400 20px/1 'Kaushan Script', cursive;
     color: #888;
-}
+} */
 
 .turnR5 {
     -webkit-transform: rotate(-5deg);

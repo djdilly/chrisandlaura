@@ -1,5 +1,16 @@
 $(window).load(function() {
 
+  //relative borders on polaroids
+  var el = $(".square");
+  var borderWidth = el.width() / 32 | 0; // calculate & trim decimals
+  var borderBottomWidth = borderWidth * 5
+  el.css("border-width", borderWidth + "px");
+  el.css("border-bottom-width", borderBottomWidth + "px");
+  var el2 = $(".sq-footer");
+  el2.css("bottom", "-" + borderWidth * 4 + "px");
+  el2.css("font", borderWidth * 1 + "px 'Kaushan Script', cursive");
+
+  // animation initialization
   var height = $(window).height() / 2;
   //initialize scrollreveal
   window.sr = ScrollReveal({
