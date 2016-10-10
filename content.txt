@@ -27,3 +27,14 @@ Banter            Craic                  Fun
 Mug               Ur Ma                  Someone whom is taken for granted
 She's a sort      She's a pure beaut     by gosh, she is a wonderful looking woman
 Ibeefa            Bundoran               popular holiday destinations
+
+
+RSVP button
+<a class="typeform-share button" href="https://djdilly.typeform.com/to/xgdM5w" data-mode="2" target="_blank">RSVP</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+Speech Sweepstake
+<!-- Change the width and height values to suit you best -->
+<div class="typeform-widget" data-url="https://djdilly.typeform.com/to/xgdM5w" data-text="Speech Sweepstake" style="width:100%;height:500px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=xgdM5w&amp;utm_source=typeform.com-4383665-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>
