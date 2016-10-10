@@ -2,20 +2,17 @@
 function initMap() {
     var mapDiv = document.getElementById('map');
     var myWeddingVenueLatLng = {
-        lat: 51.806100,
-        lng: 0.6891120
-    };
+      lat: 54.4736062,
+      lng: -7.6459937
+     };
     var myCenterLatLng = {
-        lat: 51.806100,
-        lng: 0.6621120
+        lat: 54.6156122,
+        lng: -6.309496
     };
-    var holidayInnBraintree = {
-        lat: 51.8682915,
-        lng: 0.5345573
-    }
+
     var map = new google.maps.Map(mapDiv, {
         center: myCenterLatLng,
-        zoom: 12,
+        zoom: 9,
         disableDefaultUI: true,
         draggable: false,
         scrollwheel: false,
@@ -25,45 +22,53 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: myWeddingVenueLatLng,
         map: map,
-        title: 'The party!',
-        icon: {
-            url: "img/like-black-heart-button.svg",
+        title: 'Chris proposed here',
+        icon: {url: "img/like-black-heart-button.svg",
             scaledSize: new google.maps.Size(40, 48)
         }
     });
 
     var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    var paddleBase = 'https://maps.google.com/mapfiles/kml/paddle/';
     var icons = {
-      hotel: {
-        icon: iconBase + 'lodging.png'
+      horse: {
+        icon: iconBase + 'horsebackriding.png'
+      },
+      pink: {
+        icon: paddleBase + 'pink-blank.png'
+      },
+      blue: {
+        icon: paddleBase + 'blu-blank.png'
+      },
+      green:{
+        icon: paddleBase + 'grn-blank.png'
+      },
+      orange:{
+        icon: paddleBase + 'orange-blank.png'
       }
     };
 
     var features = [
       {
-        position: new google.maps.LatLng(51.8682915, 0.5345573),
-        type: 'hotel',
-        title: 'Holiday Inn Braintree'
+        position: new google.maps.LatLng(55.0066605, -7.3467505),
+        type: 'blue',
+        title: 'Chris Lived here'
       },
       {
-        position: new google.maps.LatLng(51.8811211,0.7880804),
-        type: 'hotel',
-        title: 'Best Western Marks Tey'
+        position: new google.maps.LatLng(54.4176703,-8.4850056),
+        type: 'horse',
+        title: 'Chris fell off a horse here, the day he proposed.'
       },
       {
-        position: new google.maps.LatLng(51.8925726,0.8220193),
-        type: 'hotel',
-        title: 'Holiday Inn Colchester'
+        position: new google.maps.LatLng(54.3470806,-7.6398836),
+        type: 'pink',
+        title: 'Laura Lived here'
       },
+
       {
-        position: new google.maps.LatLng(51.7848346,0.8120422),
-        type: 'hotel',
-        title: 'Crowne Plaza Resort Colchester Five Lakes'
-      },
-      {
-        position: new google.maps.LatLng(51.8799535,0.5490725),
-        type: 'hotel',
-        title: 'White Hart Hotel'
+        position: new google.maps.LatLng(54.6019787,-7.3299775),
+        type: 'orange',
+        title: 'Chris and Laura now live here'
       }
     ]
 
