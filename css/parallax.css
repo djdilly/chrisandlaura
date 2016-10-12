@@ -15,6 +15,9 @@
 
 /* Parallax groups/cards - mostly just sets height
   --------------------------------------------- */
+.parallax__group_noheight {
+    position: relative;
+}
 
 .parallax__group_littleshort {
     position: relative;

@@ -6,8 +6,8 @@ function initMap() {
       lng: -7.6459937
      };
     var myCenterLatLng = {
-        lat: 54.6156122,
-        lng: -6.309496
+        lat: 54.5945324,
+        lng: -7.66945572
     };
 
     var map = new google.maps.Map(mapDiv, {

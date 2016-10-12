@@ -78,7 +78,7 @@ $(window).load(function() {
   sr.reveal('.sr', { container: parallaxDiv, duration: "4000" });
   $(".sr").css("visibility","visible");
 
-  window.onresize = function(){ location.reload(); }
+//   window.onresize = function(){ location.reload(); }
 
 });
 
