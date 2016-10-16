@@ -1,21 +1,26 @@
-/* .button
+.button
 {
   width: 150px;
   height: 150px;
   background:#4cd3d5;
   color: #ffffff;
   cursor:pointer;
-} */
+  padding: 20px 30px;
+  border-style: solid;
+  border-width: 2px;
+  text-decoration: none;
+  font-size: 3.0vh;
+}
 
-.button {
+/* .button {
     text-decoration: none; font: menu;
     display: inline-block; padding: 2px 8px;
     background: ButtonFace; color: ButtonText;
     border-style: solid; border-width: 2px;
     border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
-}
-.button:active {
-    border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+} */
+.button:hover {
+  background:#4cd3f5;
 }
 
 #groupTitleLandscape .banner {
@@ -163,6 +168,10 @@ img.displayed {
 .flex-item {
   width: 100%;
 }
+.flex-item-centered {
+  width: 100%;
+  text-align: center;
+}
 
 @media all and (orientation:portrait) {
     .hide-when-portrait {
@@ -172,7 +181,7 @@ img.displayed {
 
 @media all and (orientation:landscape) {
     .flex-container {
-      width: 1000px;
+      max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
     }
