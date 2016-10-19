@@ -49,6 +49,17 @@
       color: #888;
 }
 
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+    .square:hover {
+        -webkit-transform: scale(3);
+        -moz-transform: scale(3);
+    }
+    .sq-footer {
+        font: 1px 'Kaushan Script', cursive;
+    }
+}
+
 /* just for display */
 .sq-setter-w + .sq-content {
     background: url("../img/photo1.jpg") no-repeat center center;
@@ -57,34 +68,35 @@
     background: url("../img/photo1.jpg") no-repeat center center;
     background-size: cover;}
 
-.turnR5 {
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    -o-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-}
+/*.turnR5 {*/
+/*    -webkit-transform: rotate(-5deg);*/
+/*    -moz-transform: rotate(-5deg);*/
+/*    -o-transform: rotate(-5deg);*/
+/*    -ms-transform: rotate(-5deg);*/
+/*    transform: rotate(-5deg);*/
+/*}*/
 
-.turnL6 {
-    -webkit-transform: rotate(6deg);
-    -moz-transform: rotate(6deg);
-    -o-transform: rotate(6deg);
-    -ms-transform: rotate(6deg);
-    transform: rotate(6deg);
-}
+/*.turnL6 {*/
+/*    -webkit-transform: rotate(6deg);*/
+/*    -moz-transform: rotate(6deg);*/
+/*    -o-transform: rotate(6deg);*/
+/*    -ms-transform: rotate(6deg);*/
+/*    transform: rotate(6deg);*/
+/*}*/
 
-.turnL2 {
-    -webkit-transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    transform: rotate(2deg);
-}
+/*.turnL2 {*/
+/*    -webkit-transform: rotate(2deg);*/
+/*    -moz-transform: rotate(2deg);*/
+/*    -o-transform: rotate(2deg);*/
+/*    -ms-transform: rotate(2deg);*/
+/*    transform: rotate(2deg);*/
+/*}*/
 
-.turnL1-25 {
-    -webkit-transform: rotate(1.25deg);
-    -moz-transform: rotate(1.25deg);
-    -o-transform: rotate(1.25deg);
-    -ms-transform: rotate(1.25deg);
-    transform: rotate(1.25deg);
-}
+/*.turnL1-25 {*/
+/*    -webkit-transform: rotate(1.25deg);*/
+/*    -moz-transform: rotate(1.25deg);*/
+/*    -o-transform: rotate(1.25deg);*/
+/*    -ms-transform: rotate(1.25deg);*/
+/*    transform: rotate(1.25deg);*/
+/*}*/
+

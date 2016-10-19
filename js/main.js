@@ -8,7 +8,7 @@ $(window).load(function() {
   el.css("border-bottom-width", borderBottomWidth + "px");
   var el2 = $(".sq-footer");
   el2.css("bottom", "-" + borderWidth * 4 + "px");
-  el2.css("font", borderWidth * 1 + "px 'Kaushan Script', cursive");
+  el2.css("font", borderWidth * 2 + "px 'Kaushan Script', cursive");
 
   // animation initialization
   var height = $(window).height() / 2;
@@ -21,7 +21,7 @@ $(window).load(function() {
     distance: '5vw',
 
     // Time in milliseconds.
-    duration: 300,
+    duration: 100,
     delay: 0,
 
     // Starting angles in degrees, will transition from these values to 0 in all axes.

@@ -33,13 +33,14 @@
 .title {
     bottom-padding: 20px;
     text-align: center;
-    font-family: 'Rochester', cursive;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    font-family: 'Rochester', arial;
+    font-weight: bold;
+    color: #7F7F70;
 }
 
 .body {
-    font-family: 'Rochester', cursive;
+    font-family: 'Rochester', arial;
+    color: #98988A;
 }
 
 .parallax {
@@ -73,6 +74,9 @@
 
 /* google map styles
   --------------------------------------------- */
+.map {
+    border: 3px solid #7F7F70;
+}
 .polaroid-map {
     padding-top: 30px;
     right: 50px;
