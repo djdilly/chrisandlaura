@@ -1,5 +1,16 @@
 //google maps initialisation
 function initMap() {
+    testExp = new RegExp('Android|webOS|iPhone|iPad|' +
+    		       'BlackBerry|Windows Phone|'  +
+    		       'Opera Mini|IEMobile|Mobile' ,
+    		      'i');
+    var zoom = 9
+    var certerLongitude = -7.66945572
+    if (testExp.test(navigator.userAgent)) {
+      zoom = 8
+      certerLongitude = -7.86945572
+    }
+
     var mapDiv = document.getElementById('map');
     var myWeddingVenueLatLng = {
       lat: 54.4736062,
@@ -7,14 +18,16 @@ function initMap() {
      };
     var myCenterLatLng = {
         lat: 54.7045324,
-        lng: -7.66945572
+        lng: certerLongitude
     };
 
     var map = new google.maps.Map(mapDiv, {
         center: myCenterLatLng,
-        zoom: 9,
+        zoom: zoom,
         disableDefaultUI: true,
-        draggable: true,
+        draggable: false,
+        zoomControl: false,
+        disableDoubleClickZoom: true,
         scrollwheel: false,
         styles: [{"featureType":"","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#B8CDC2"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]
     });

@@ -10,6 +10,8 @@
   border-width: 2px;
   text-decoration: none;
   font-size: 3.0vh;
+  border-radius: 10px;
+  font-family: 'Rochester', arial;
 }
 
 /* .button {
@@ -28,7 +30,13 @@
     -moz-column-count: 3;
     column-count: 3;
 } */
+#groupsweep{
+   text-align: center;
+    
+    font-weight: bold;
 
+    font-size : 12pt;
+}
 
 #groupTitleLandscape .banner {
     width: 65vw;
@@ -36,6 +44,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+#groupcontactUs{
+    text-align:center;
+}
+
 .title_White {
     padding-top: 10px;
     text-align: center;
@@ -43,6 +55,8 @@
     font-weight: bold;
     color:#ffffff;
     font-size : 25pt;
+
+
 }
 .body_white_center {
     font-family: 'Homemade Apple', cursive;
@@ -54,7 +68,6 @@ a .body_white_center {
     font-family: 'Homemade Apple', cursive;
     color: #C9D2DD;
     text-align: center;
-    
 
 }
 a .body_white_center:link    {
@@ -80,15 +93,18 @@ a .body_white_center:active  {
     /*background: #f9ddcf;*/
     color:#4cd3d5;
     font-size : 30pt;
-
+    background-color:#fbe0ff;
+    border-radius: 10px;
 }
 ol .title {
     bottom-padding: 20px;
     text-align: center;
     font-family: 'Rochester', arial;
     font-weight: bold;
-    color: #7F7F70;
-    font-size : 16pt;
+    color: #98988A;
+    font-size : 19pt;
+    background-color:#ffffff;
+
 }
 ol {
     bottom-padding: 20px;
