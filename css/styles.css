@@ -22,6 +22,13 @@
 .button:hover {
   background:#4cd3f5;
 }
+/* ol {
+ row-count:9;
+   -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+} */
+
 
 #groupTitleLandscape .banner {
     width: 65vw;
@@ -29,14 +36,74 @@
     margin-left: auto;
     margin-right: auto;
 }
+.title_White {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bold;
+    color:#ffffff;
+    font-size : 25pt;
+}
+.body_white_center {
+    font-family: 'Homemade Apple', cursive;
+    color: #ffffff;
+    text-align: center;
+}
 
+a .body_white_center {
+    font-family: 'Homemade Apple', cursive;
+    color: #C9D2DD;
+    text-align: center;
+    
+
+}
+a .body_white_center:link    {
+    color:#ffffff;
+
+}
+a .body_white_center:visited {
+    color:lightgray;
+}
+a .body_white_center:hover   {
+    color:#f9ddcf
+d;
+}
+a .body_white_center:active  {
+    color:yellow;
+}
 .title {
+    bottom-padding: 20px;
+    text-align: center;
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+    color: #7F7F70;
+    /*background: #f9ddcf;*/
+    color:#4cd3d5;
+    font-size : 30pt;
+
+}
+ol .title {
     bottom-padding: 20px;
     text-align: center;
     font-family: 'Rochester', arial;
     font-weight: bold;
     color: #7F7F70;
+    font-size : 16pt;
 }
+ol {
+    bottom-padding: 20px;
+    text-align: center;
+    font-family: 'Rochester', arial;
+    font-size : 15pt;
+}
+.Handwriting {
+    text-align: Center;
+    font-size : 60pt;
+    font-family: 'Dancing Script', cursive;
+    color: #98988A;
+
+}
+
 
 .body {
     font-family: 'Rochester', arial;
@@ -194,5 +261,6 @@ img.displayed {
         display: none
     }
 }
+
 
 
