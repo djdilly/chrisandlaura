@@ -1,3 +1,9 @@
+input[type="range"]
+{
+  width:60%;
+
+}
+
 .button
 {
   width: 150px;
@@ -32,7 +38,7 @@
 } */
 #groupsweep{
    text-align: center;
-    
+
     font-weight: bold;
 
     font-size : 12pt;
@@ -53,14 +59,14 @@
     text-align: center;
     font-family: 'Homemade Apple', cursive;
     font-weight: bold;
-    color:#ffffff;
+    color:#A59892;
     font-size : 25pt;
 
 
 }
 .body_white_center {
     font-family: 'Homemade Apple', cursive;
-    color: #ffffff;
+    color: #A59892;
     text-align: center;
 }
 
@@ -84,20 +90,30 @@ d;
 a .body_white_center:active  {
     color:yellow;
 }
-.title {
-    bottom-padding: 20px;
+.title-braxted {
+
     text-align: center;
     font-family: 'Playball', cursive;
     font-weight: bold;
     color: #7F7F70;
-    /*background: #f9ddcf;*/
-    color:#4cd3d5;
+
+    font-size : 20pt;
+    font-style:underline;
+    border-radius: 10px;
+}
+.title {
+
+    text-align: center;
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+    color: #7F7F70;
+
     font-size : 30pt;
-    background-color:#fbe0ff;
+    font-style:underline;
     border-radius: 10px;
 }
 ol .title {
-    bottom-padding: 20px;
+
     text-align: center;
     font-family: 'Rochester', arial;
     font-weight: bold;
@@ -107,7 +123,7 @@ ol .title {
 
 }
 ol {
-    bottom-padding: 20px;
+
     text-align: center;
     font-family: 'Rochester', arial;
     font-size : 15pt;

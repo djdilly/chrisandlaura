@@ -17,6 +17,7 @@
   --------------------------------------------- */
 .parallax__group_noheight {
     position: relative;
+  background:#ffffff;
 }
 
 .parallax__group_littleshort {
@@ -26,6 +27,7 @@
     height: 80vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+  background:#ffffff;
 }
 
 .parallax__group_fullview {
@@ -35,6 +37,7 @@
     height: 100vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+  background:#ffffff;
 }
 
 .parallax__group_veryshort {
@@ -44,6 +47,7 @@
     height: 35vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+  background:#ffffff;
 }
 
 .parallax__group_quiteshort {
@@ -53,6 +57,7 @@
     height: 70vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+  background:#ffffff;
 }
 
 /* Parallax layers - sets the depths
@@ -66,18 +71,21 @@
     bottom: 0;
     -webkit-transform-origin-x: 100%;
     transform-origin-x: 100%;
+  background:#ffffff;
 }
 
 .parallax__layer--fore {
     -webkit-transform: translateZ(90px) scale(.7);
     transform: translateZ(90px) scale(.7);
     z-index: 1;
+  background:#ffffff;
 }
 
 .parallax__layer--base {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     z-index: 4;
+  background:#ffffff;
 }
 
 .parallax__layer--back {
@@ -85,7 +93,9 @@
     transform: translateZ(-75px) scale(1.25);
     z-index: 3;
     left: -10px;
+  background:#ffffff;
 }
+
 
 .parallax__layer--further-back {
     -webkit-transform: translateZ(-300px) scale(2);
