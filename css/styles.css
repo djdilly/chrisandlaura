@@ -4,8 +4,7 @@ input[type="range"]
 
 }
 
-.button
-{
+.button{
   width: 150px;
   height: 150px;
   background:#4cd3d5;
@@ -61,20 +60,16 @@ input[type="range"]
     font-weight: bold;
     color:#A59892;
     font-size : 25pt;
-
-
 }
 .body_white_center {
     font-family: 'Homemade Apple', cursive;
     color: #A59892;
     text-align: center;
 }
-
 a .body_white_center {
     font-family: 'Homemade Apple', cursive;
     color: #C9D2DD;
     text-align: center;
-
 }
 a .body_white_center:link    {
     color:#ffffff;
@@ -85,7 +80,7 @@ a .body_white_center:visited {
 }
 a .body_white_center:hover   {
     color:#f9ddcf
-d;
+
 }
 a .body_white_center:active  {
     color:yellow;
@@ -102,12 +97,10 @@ a .body_white_center:active  {
     border-radius: 10px;
 }
 .title {
-
     text-align: center;
     font-family: 'Playball', cursive;
     font-weight: bold;
     color: #7F7F70;
-
     font-size : 30pt;
     font-style:underline;
     border-radius: 10px;
@@ -135,11 +128,14 @@ ol {
     color: #98988A;
 
 }
-
+p{
+  text-align: justify;
+}
 
 .body {
     font-family: 'Rochester', arial;
     color: #98988A;
+
 }
 
 .parallax {
