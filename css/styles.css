@@ -53,38 +53,6 @@
     text-align:center;
 }
 
-.title_White {
-    padding-top: 10px;
-    text-align: center;
-    font-family: 'Homemade Apple', cursive;
-    font-weight: bold;
-    color:#A59892;
-    font-size : 25pt;
-}
-.body_white_center {
-    font-family: 'Homemade Apple', cursive;
-    color: #A59892;
-    text-align: center;
-}
-a .body_white_center {
-    font-family: 'Homemade Apple', cursive;
-    color: #C9D2DD;
-    text-align: center;
-}
-a .body_white_center:link    {
-    color:#ffffff;
-
-}
-a .body_white_center:visited {
-    color:lightgray;
-}
-a .body_white_center:hover   {
-    color:#f9ddcf
-
-}
-a .body_white_center:active  {
-    color:yellow;
-}
 .title-braxted {
 
     text-align: center;
