@@ -1,3 +1,24 @@
+#floating-panel {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width:100%;
+    z-index: 5;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    font-size: 6vh;
+}
+#floating-inner {
+    width: 40%;
+    margin: 0 auto; 
+    background-color: #fff;
+    border: 3px solid #7F7F70;
+    font-family: 'Playball', cursive;
+    /*font-weight: bold;*/
+    color: #7F7F70;
+}
+
 /*input[type="range"]*/
 /*{*/
 /*  width:60%;*/

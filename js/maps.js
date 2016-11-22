@@ -47,6 +47,8 @@
 
         // Setup the slider event listener
         $("#loveStorySlider").change(function() {
+          $("#floating-inner").attr("hidden","hidden")
+          
           var currentMarkerIndex = document.getElementById("loveStorySlider").value
           
           //sloppy lazy coding for displaying correct map label
@@ -66,18 +68,9 @@
             setTimeout(function() {
               panTo(newLat, newLng)
             }, 1000);
+            drop()
           }
-          else if (currentMarkerIndex == 5) {
-            newLat = 51.806100
-            newLng = 0.6891120
-            panTo(newLat, newLng)
-            setTimeout(function() {
-              currentMarkerIndex = document.getElementById("loveStorySlider").value
-              newZoom = 14
-              smoothZoom(map, newZoom, currentZoom)
-            }, 2000);
-          }
-          else {
+          else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4)  {
             newLat = 54.5945324
             newLng = -7.66945572
             newZoom = 9
@@ -90,9 +83,23 @@
             setTimeout(function() {
               panTo(newLat, newLng)
             }, 1000);
+            drop()
+          }
+          else if (currentMarkerIndex == 5) {
+            newLat = 51.806100
+            newLng = 0.6891120
+            panTo(newLat, newLng)
+            setTimeout(function() {
+              currentMarkerIndex = document.getElementById("loveStorySlider").value
+              newZoom = 14
+              smoothZoom(map, newZoom, currentZoom)
+            }, 2000);
+            drop()
+          }
+          else {
+            $("#floating-inner").removeAttr("hidden")
           }
 
-          drop()
         });
       }
 
@@ -106,13 +113,14 @@
       }
 
       function drop() {
-        // remove markers already on map beyond the new slider index
+        deleteMarkers()
+        
         var newMarkerIndex = document.getElementById("loveStorySlider").value - 1
 
         if (newMarkerIndex > -1) { //avoid out of bounds exception
           var feature = features[parseInt(newMarkerIndex)]
 
-          if (isLocationFree(feature.position)) { //don't add a marker more than once
+          // if (isLocationFree(feature.position)) { //don't add a marker more than once
             // add new marker to page
             markers.push(new google.maps.Marker({
               position: feature.position,
@@ -124,7 +132,7 @@
               map: map,
               animation: google.maps.Animation.BOUNCE
             }));
-          }
+          // }
         }
       }
 
@@ -199,6 +207,24 @@
             panTo(queued[0], queued[1]);
           }
         }
+      }
+      
+      // Sets the map on all markers in the array.
+      function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+        }
+      }
+      
+      // Removes the markers from the map, but keeps them in the array.
+      function clearMarkers() {
+        setMapOnAll(null);
+      }
+      
+      // Deletes all markers in the array by removing references to them.
+      function deleteMarkers() {
+        clearMarkers();
+        markers = [];
       }
 
       ////////////////MAP STYLE RESOURCES//////////////////
