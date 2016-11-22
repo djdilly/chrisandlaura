@@ -39,13 +39,10 @@
   border-radius: 10px;
   font-family: 'Rochester', arial;
 }
-.ulList{
-    list-style-type: none;
-    font-size: 3.4vh;
-}
-.liTitle{
+.ulHighlight{
     font-weight: bold;
 }
+
 /* .button {
     text-decoration: none; font: menu;
     display: inline-block; padding: 2px 8px;
