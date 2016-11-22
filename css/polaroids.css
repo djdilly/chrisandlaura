@@ -61,13 +61,26 @@
 }
 
 /* just for display */
-.sq-setter-w + .sq-content {
-    background: url("../img/photo1.jpg") no-repeat center center;
+.premier > .sq-setter-w + .sq-content {
+    background: url("../img/Premier.JPG") no-repeat center center;
     background-size: cover;}
-.sq-setter-h + .sq-content {
-    background: url("../img/photo1.jpg") no-repeat center center;
+.premier > .sq-setter-h + .sq-content {
+    background: url("../img/Premier.JPG") no-repeat center center;
     background-size: cover;}
 
+.county > .sq-setter-w + .sq-content {
+    background: url("../img/TheCounty.JPG") no-repeat center center;
+    background-size: cover;}
+.county > .sq-setter-h + .sq-content {
+    background: url("../img/TheCounty.JPG") no-repeat center center;
+    background-size: cover;}
+
+.lion > .sq-setter-w + .sq-content {
+    background: url("../img/lion.JPG") no-repeat center center;
+    background-size: cover;}
+.lion > .sq-setter-h + .sq-content {
+    background: url("../img/lion.JPG") no-repeat center center;
+    background-size: cover;}
 /*.turnR5 {*/
 /*    -webkit-transform: rotate(-5deg);*/
 /*    -moz-transform: rotate(-5deg);*/
