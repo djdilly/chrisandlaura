@@ -72,7 +72,10 @@ $(window).load(function() {
     afterReset: function (domEl) {}
   });
 
-  sr.reveal('.sr', {  duration: "4000" });
+  // #parallax will be the main container
+  var parallaxDiv = document.getElementById('parallax');
+
+  sr.reveal('.sr', { container: parallaxDiv, duration: "4000" });
   $(".sr").css("visibility","visible");
 
 //   window.onresize = function(){ location.reload(); }

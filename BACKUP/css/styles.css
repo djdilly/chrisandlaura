@@ -41,13 +41,8 @@
 }
 .ulList{
     list-style-type: none;
-    font-size: 80%;
+    font-size: 3.4vh;
 }
-
-.ulList > li{
-   font-size: 140%;
-}
-
 .liTitle{
     font-weight: bold;
 }
@@ -138,12 +133,12 @@ p{
 
 }
 
-.body {
-  font-size: 130%;
+.parallax {
+  font-size: 150%;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
-    .body {
+    .parallax {
         font-size: 100%;
     }
 }
@@ -279,6 +274,12 @@ img.displayed {
 }
 
 @media all and (orientation:landscape) {
+    .flex-container {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .hide-when-landscape {
         display: none
     }

@@ -1,0 +1,75 @@
+About Laura and Chris.
+
+Where's the wedding?
+We are getting married in Braxted Park
+
+How do I get to Essex?
+Planes...
+Essex is very well served by all London's major airports. Although the closest airport is London Stansted. There will be regular buses to Chelmsford directly from the Airport.
+To fly from Northern Ireland, Chris recommends flying from Belfast International to London Stansted using Easyjet. There are several flights daily to suit everyones schedule.
+
+There is good bus connections to Chelmsford from Stansted Airport. 
+
+Trains...
+Chelmsford has an excellent train connection from London Liverpool Street or London Stratford Stations. This service runs very regularly, and takes between 40 minutes and 50 minutes. 
+WARNING Irish folk, Stand on the right of the escalators...Londoner's can be grouchy...
+
+and automobiles...
+Witham is on the A12, directly between Colchester and Chelmsford, so go to one of those Cities, head for the other down the A12, and stop half way...simples...or there are plenty of GPS apps and devices about...
+
+We will be providing transport from Chelmsford train station on the day of the wedding at 13:00 SHARP! If you miss the bus, You can use Fareway Taxi Chelmsford - 01245 355555.
+
+Where can I stay?
+
+The closest hotel to Chelmsford train station is the Premier Inn Chelmsford City Centre. We advise booking this hotel as soon as possible as it is across the road from the bus stop where our transport will be. Please note though, this hotel does not have car parking, so you will need to use city centre car parks if you are driving. 
+
+The County Hotel Chelmsford is a suitable alternative, and this hotel is a 4 minute walk away from the bus stop and does have car parking (please check for availablity).
+
+
+
+What's to eat?
+Not sure yet, but when we know, you can choose here.
+
+Isn't Essex that place from the TV?
+Well yea, but it there is so much more to Essex <hyperlink>https://en.wikipedia.org/wiki/Essex</> than what your see on TV.
+
+Hylands Park - https://www.tripadvisor.co.uk/Attraction_Review-g503775-d4591267-Reviews-Hylands_Park-Chelmsford_Essex_England.html
+
+Bars and Restaurants
+
+Pig and Whistle (Trip advisors favourite Bar) - https://www.tripadvisor.co.uk/Restaurant_Review-g503775-d3952718-Reviews-Pig_Whistle-Chelmsford_Essex_England.html
+
+The Cellar (Laura's recommendation) - https://www.tripadvisor.co.uk/Restaurant_Review-g503775-d2541584-Reviews-The_Wine_Cellar-Chelmsford_Essex_England.html
+
+
+Speech Sweepstake
+
+Tell us the bars (contact us)
+If you have any questions please feel free to contact Laura or Chris directly.
+
+Travel Thesaurus (Essex to Derry)
+
+Essex             Derry                  Definition
+Well Ream         Pure Lefal             "That's lovely"
+Chip off          Santer                 "Go away"
+Nice one Bruv     Sweet mucker           "Thats great"
+Oi Oi Saveloy!    Yes lad!               "Hello old bean!"
+Banter            Craic                  Fun
+Mug               your Ma                Someone whom is taken for granted
+She's a sort      She's a pure beaut     by gosh, she is a wonderful looking woman
+Ibeefa            Buncrana               popular holiday destinations
+
+Colours
+green #4cd3d5
+pink #c9d5f0 f9ddcf
+white #ffffff
+
+RSVP button
+<a class="typeform-share button" href="https://djdilly.typeform.com/to/xgdM5w" data-mode="2" target="_blank">RSVP</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+Speech Sweepstake
+<!-- Change the width and height values to suit you best -->
+<div class="typeform-widget" data-url="https://djdilly.typeform.com/to/xgdM5w" data-text="Speech Sweepstake" style="width:100%;height:500px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/?utm_campaign=xgdM5w&amp;utm_source=typeform.com-4383665-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>

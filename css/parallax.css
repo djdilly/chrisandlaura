@@ -1,23 +1,20 @@
 /* Parallax base styles
   --------------------------------------------- */
 
-.parallax {
+.parallax1 {
     height: 500px;
     /* fallback for older browsers */
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-    -webkit-perspective-origin-x: 100%;
-    perspective-origin-x: 100%;
+   
 }
 
 /* Parallax groups/cards - mostly just sets height
   --------------------------------------------- */
 .parallax__group_noheight {
     position: relative;
-  background:#ffffff;
+  
 }
 
 .parallax__group_littleshort {
@@ -25,39 +22,13 @@
     height: 400px;
     /* fallback for older browsers */
     height: 80vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  background:#ffffff;
+  
 }
-
-.parallax__group_fullview {
-    position: relative;
-    height: 500px;
-    /* fallback for older browsers */
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  background:#ffffff;
-}
-
-.parallax__group_veryshort {
-    position: relative;
-    height: 175px;
-    /* fallback for older browsers */
-    height: 35vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  background:#ffffff;
-}
-
 .parallax__group_quiteshort {
     position: relative;
     height: 350px;
     /* fallback for older browsers */
     height: 70vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  background:#ffffff;
 }
 
 /* Parallax layers - sets the depths
@@ -69,110 +40,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    -webkit-transform-origin-x: 100%;
-    transform-origin-x: 100%;
-  background:#ffffff;
+    
 }
-
-.parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-  background:#ffffff;
-}
-
-.parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 4;
-  background:#ffffff;
-}
-
-.parallax__layer--back {
-    -webkit-transform: translateZ(-75px) scale(1.25);
-    transform: translateZ(-75px) scale(1.25);
-    z-index: 3;
-    left: -10px;
-  background:#ffffff;
-}
-
-
-.parallax__layer--further-back {
-    -webkit-transform: translateZ(-300px) scale(2);
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-    left: -10px;
-}
-
-.parallax__layer--deep {
-    -webkit-transform: translateZ(-600px) scale(3);
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
-    left: -15px;
-}
-
-/* style the groups - z-index allows groups to slide under and over eachother
-  --------------------------------------------- */
-
-#groupTitlePotrait {
-    z-index: 3;
-}
-
-#groupTitleLandscape .parallax__layer--base {
-    background: #FFFFFF;
-}
-#groupAboutUs {
-    z-index: 3;
-}
-
-#groupAboutUs .parallax__layer--base {
-    background: rgb(168, 151, 135);
-}
-
-#groupBlank {
-    z-index: 3;
-}
-
-#groupBlank .parallax__layer--base {
-    background: rgb(168, 151, 135);
-}
-
-#groupPolaroids {
-    z-index: 3;
-}
-
-#groupPolaroids .parallax__layer--base {
-    background: rgb(95, 85, 81);
-}
-
-#groupPic2 {
-    z-index: 2;
-}
-
-#groupPic2 .parallax__layer--deep {
-    background: #cde7dc;
-}
-
-#groupPic3 {
-    z-index: 2;
-}
-
 /* give some the groups full div pictures using background url
   --------------------------------------------- */
 
 @media all and (orientation:portrait) {
-    #groupTitlePotrait .background-image {
-        background: url(../img/photo1_tall.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #groupPic2 .background-image {
-        background: url(../img/photo3_tall.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #groupPic3 .background-image {
-        background: url(../img/photo2_tall.jpg) no-repeat center center;
-        background-size: cover;
-    }
     #group5venue .background-image {
         background: url(../img/braxted_tall.jpg) no-repeat center center;
         background-size: cover;
@@ -180,42 +53,8 @@
 }
 
 @media all and (orientation:landscape) {
-    #groupTitleLandscape .background-image {
-        background: url(../img/photo1_superwide.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #groupPic2 .background-image {
-        background: url(../img/photo3_superwide.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    #groupPic3 .background-image {
-        background: url(../img/photo2_superwide.jpg) no-repeat center center;
-        background-size: cover;
-    }
     #group5venue .background-image {
         background: url(../img/braxted.jpg) no-repeat center center;
         background-size: cover;
     }
-}
-
-#groupAboutUs .background-image {
-    background: url(../img/seamless-white-paper-texture-foy7ea0um.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-/* misc styles
-  --------------------------------------------- */
-
-body,
-html {
-    overflow: hidden;
-}
-
-body {
-    font: 100% / 1.5 Arial;
-}
-
-* {
-    margin: 0;
-    padding: 0;
 }

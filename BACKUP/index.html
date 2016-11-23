@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>www.chrisandlaura.co.uk</title>
+	<link rel="stylesheet" href="css/parallax.css">
+	<link rel="stylesheet" href="css/polaroids.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Homemade+Apple|Playball" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+</head>
+<body>
+	<div id="parallax" class="parallax">
+		<!--START of Title Section-->
+		<div id="groupTitlePotrait" class="parallax__group_quiteshort flex-container hide-when-landscape">
+			<img class="flex-item" src="img/logo.jpg" />
+			<div style="height:15vh"></div>
+			<div class="flex-item-centered">
+				<a class="button" href="https://djdilly.typeform.com/to/x4sX4C" target="_blank">RSVP</a>
+			</div>
+    	</div>
+		<div id="groupTitleLandscape" class="parallax__group_quiteshort flex-container hide-when-portrait">
+			<img class="flex-item" src="img/logo.jpg" class="banner" />
+			<div style="height:15vh"></div>
+			<div class="flex-item-centered">
+				<a class="button" href="https://djdilly.typeform.com/to/x4sX4C" target="_blank">RSVP</a>
+			</div>
+		</div>
+		<!--END of Title Section-->
+
+		<!--START of About us Section -->
+		<section class="sr">
+
+			<div id="groupAboutUs" class="parallax__group_noheight flex-container">
+				<div class="flex-box">
+          <div class="title"><u>Welcome</u></div>
+					<div class="body">
+            <p> Thank you for visiting our wedding website. We made this site so that you will always have details of our big day. Below are details of local hotels, some of our favourite eateries as well as a few things to do in and around Chelmsford city. You will also be able to RSVP via the button above, just so we know that you are going to join us on our special day.</p>
+					</div>
+          <br/>
+				</div>
+		<!--END of About us Section -->
+
+		<!--START of MAP Section -->
+        <div class="title"><u>Relationship Timeline</u></div>
+          <div class="body"><p>Use the slider below to discover more about Laura and Chris' time together. You can also hover over the pins to read the story. </p>
+          </div>
+        <br/>
+
+    </div>
+    <div class="flex-container" align="center">
+      <input type="range" id="loveStorySlider" min="0" max="12" value="0" />
+    </div>
+    <div class="body" align="center">
+      <label id="0" hidden>1983 to Present - Laura and Chris' Love Story</label><!--UK-->
+      <label id="1" >Chris is from here</label><!--UK-->
+      <label id="2" hidden>Laura is from here</label><!--UK-->
+      <label id="3" hidden>7th January 2011 - Laura moved to Northern Ireland </label><!--NIW-->
+      <label id="4" hidden>4th October 2012 - Laura and Chris met</label><!--NIW-->
+      <label id="5" hidden>25th March 2013 - Laura moved to Irvinestown</label><!--NIW-->
+      <label id="6" hidden>15th August 2015 - Chris proposed to Laura on her 31st Birthday</label><!--NIW-->
+      <label id="7" hidden>15th August 2015 - Chris fell off a horse the first time he went riding with Laura</label><!--NIW-->
+      <label id="8" hidden>16th February 2016 - Laura and Chris move to Omagh</label><!--NIW-->
+      <label id="9" hidden>16th April 2016 - Chris, Family and Friends decend on Chelmsford</label><!--CHM-->
+      <label id="10" hidden>17th April 2017 - Laura and Chris' Wedding in Braxted Park</label><!--CHM-->
+      <label id="11" hidden>More coming soon...?</label><!--UK-->
+      <!--
+          Dates for Time line.
+          - 4th October 2012- Laura and Chris met (@54.9987284,-7.2735361,19z)
+          -     February 2013 - Laura moved to Irvinestown
+          - 15th August 2015 - Chris proposed to Laura on her 31st Birthday
+            15th August 2015 - Chris fell off a horse the first time he went riding with Laura
+          - 16th February 2016 - Laura and Chris move to Omagh
+          - 16th April 2016 - Chris, Family and Friends decend on Chelmsford (@51.7341054,0.4695787,16z)
+          - 17th April 2017 - Laura and Chris' Wedding in Braxted Park (@51.8048006,0.6896057,16z)
+          - More coming soon.
+       -->
+    </div>
+		<div id="groupBlank" class="parallax__group_littleshort flex-container">
+      <input type="hidden" id="currentMarker" value="0" />
+          <div id="floating-panel">
+              <div id="floating-inner" hidden>
+                  And they lived happily ever after
+              </div>
+          </div>
+		  <div id="map" class="map"></div>
+    </div>
+    </section>
+		<!--END of MAP Section -->
+
+		<!--START of Polaroid Section -->
+		<div id="groupPolaroids" class="parallax__group_noheight flex-container">
+			<br/>
+			<br/>
+      <div class = "title"><u>Gallery</u></div>
+			<br />
+			<div class="flex-item">
+				<div class="row">
+					<div class="col-xs-4 col-md-4">
+						<div class="square turnR5">
+							<img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" class="sq-setter-w"/>
+							<div class="sq-content"></div>
+							<div class="sq-footer">Best Man - Lee Thomas</div>
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="square turnL1-25">
+							<img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" class="sq-setter-w"/>
+							<div class="sq-content"></div>
+							<div class="sq-footer">Groomsman - David Stewart</div>
+						</div>
+					</div>
+					<div class="col-xs-4 col-md-4">
+						<div class="square turnR5">
+							<img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" class="sq-setter-w"/>
+							<div class="sq-content"></div>
+							<div class="sq-footer">Best Man - Phillip Gilliland </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="flex-item">
+				<div class="row">
+					<div class="col-xs-2 col-md-2"></div>
+						<div class="col-xs-4 col-md-4">
+							<div class="square turnL2">
+								<img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" class="sq-setter-w"/>
+								<div class="sq-content"></div>
+								<div class="sq-footer">Bridesmaid - Sally Hodge </div>
+							</div>
+						</div>
+						<div class="col-xs-4 col-md-4">
+							<div class="square turnR5">
+								<img src="http://dummyimage.com/50x50/000/fff.gif&text=50x50" class="sq-setter-w"/>
+								<div class="sq-content"></div>
+								<div class="sq-footer">Bridesmaid - Leah  </div>
+							</div>
+						</div>
+
+				</div>
+			</div>
+			<br />
+			<br />
+        </div>
+		<!--END of Polaroid Section -->
+
+		<!--START of Venue Section -->
+        <div id="groupVenue" class="parallax__group_noheight flex-container">
+            <div class = "title"><u>The Venue</u></div>
+                <div class =  "body">
+                    <p>The minute we seen Braxted Park, we both knew it was perfect for our ceremony and reception. If we are lucky and avoid the April showers we will hold our ceremony outside under the garden pagoda. Guests will then be invited to join the Bride and Groom for the wedding breakfast and evening party within the manor's walled garden and pavillion after the ceremony.
+                    </p>
+                    <br/>
+            </div>
+        </div>
+        <br/>
+           
+        <div id="group5venue" class="parallax__group_quiteshort"> 
+             <div class="parallax__layer parallax__layer--base background-image"> 
+                 <div class="sr"> 
+                     <br/> 
+                     <div class="title-braxted">A beautiful setting, for a beautiful day. Read more 
+                        <a href="http://www.braxtedpark.co.uk/"                          target="_blank">here</a> 
+                     </div> 
+                 </div> 
+             </div> 
+         </div> 
+
+        <div id="groupWhereStay" class="parallax__group_noheight flex-container">
+            <br/>
+            <div class = "title"><u>Where to stay?</u></div>
+            <div class =  "body">
+                    <p>There are several hotels in the city of Chelmsford. We would recommend that guests try to get accomodation in the following locations if possible. These hotels are within walking distance of Chelmford train station, and perfectly positioned for guests to enjoy all the local delights that Chelmsford has to offer over Easter weekend. 
+                    </p>
+            </div>
+            <br/>
+            <div id="groupPolaroids" class="parallax__group_noheight flex-container">
+              <div class="flex-item">
+				<div class="row">
+				    <div class="col-xs-6 col-md-6">
+                        <div id=hotel1 class="body" style:align="center">
+                            <ul class="ulList">
+                                <li class="liTitle">Premier Inn Chelmsford City Centre,</li>
+                                <li>Victoria Road, </li>
+                                <li>Chelmsford,</li>
+                                <li>Essex,</li>
+                                <li>CM1 1NY</li>
+                                <li><a href="http://www.premierinn.com/gb/en/hotels/england/essex/chelmsford/chelmsford-city-centre.html?cid=GLBC_CHECIT" target="_blank">http://www.premierinn.com/</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <div class="square turnR5 premier">
+                            <img src="img\Premier.JPG" class="sq-setter-w"/>
+                            <div class="sq-content"></div>
+                            <div class="sq-footer">Premier Inn Chelmsford City Centre</div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+             <br/>
+              <div class="flex-item">
+				<div class="row">
+				    <div class="col-xs-6 col-md-6">    
+                        <div id=hotel2 class="body" style:align="center">
+                            <ul class="ulList">
+                                <li class="liTitle">The County Hotel Chelmsford,</li>
+                                <li>29 Rainsford Road,</li>
+                                <li> Chelmsford,</li>
+                                <li>Essex,</li>
+                                <li>CM1 2PZ</li>
+                                <li><a href="http://www.countyhotelchelmsford.co.uk/" target="_blank">http://www.countyhotelchelmsford.co.uk/</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <div class="square turnR5 county" >
+                            <img src="img\Premier.JPG" class="sq-setter-w"/>
+                            <div class="sq-content"></div>
+                            <div class="sq-footer">The County Hotel</div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+                <br/>
+                <div class="flex-item">
+				<div class="row">
+				    <div class="col-xs-6 col-md-6">    
+                        <div id=hotel2 class="body" style:align="center">
+                            <ul class="ulList">
+                                <li class="liTitle">The Lion Inn,</li>
+                                <li>Main Road,</li>
+                                <li>Boreham,</li>
+                                <li>Chelmsford,</li>
+                                <li>Essex,</li>
+                                <li>CM3 3JA</li>
+                                <li><a href="http://www.lioninnhotel.co.uk/" target="_blank">http://www.lioninnhotel.co.uk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <div class="square turnR5 lion" >
+                            <img src="img\Premier.JPG" class="sq-setter-w"/>
+                            <div class="sq-content"></div>
+                            <div class="sq-footer">The Lion Inn</div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        <!--END of Venue Section -->
+
+		<!--START of How to get there Section -->
+		<div id="groupGetThere" class="parallax__group_noheight flex-container">
+			<div class="flex-box">
+                <div style="height:5vh"></div>
+                <div class="title"><u>How do I get there?</u></div>
+                <br/>
+                <div class="body">
+                    <h4>Planes</h4>Essex is very well served by all London's major airports. Although the closest airport is London Stansted. There will be regular buses to Chelmsford directly from the Airport.
+                      To fly from Northern Ireland, Chris recommends flying from Belfast International to London Stansted using Easyjet. There are several flights daily to suit everyones schedule.
+                </div>
+                <br/>
+                <div class="body">
+                    <h4>Trains</h4>
+                        Chelmsford has an excellent train connection from London Liverpool Street or London Stratford Stations. This service runs very regularly, and takes between 50 minutes and 60 minutes.
+                        <h5>WARNING Irish folk,</h5> Stand on the right of the escalators...Londoner's can be grouchy...
+                </div>
+                <br/>
+                <div class="body">
+                    <h4>and automobiles</h4>
+                        Great Braxted is on the A12, directly between Colchester and Chelmsford. So..drive to one of those Cities, head for the other, via the A12, and stop half way...simples...or there are plenty of GPS apps and devices about...Braxted Park's address is
+                </div>
+                <br/>
+                <div class="body" style:align="center">
+                    <ul>Braxted Park Estate,</ul>
+                    <ul>Great Braxted,</ul>
+                    <ul>Witham,</ul>
+                    <ul>Essex,</ul>
+                    <ul>CM8 3EN</ul>
+                </div>
+                <br/>
+                <!--div class="body">We will be providing transport from Chelmsford train station on the day of the wedding at 13:00 SHARP! If you miss the bus, You can use Fareway Taxi Chelmsford - 01245 355555.</div>
+                <br/-->
+            </div>
+		</div>
+		<!--END of How to get there Section -->
+        <br/>
+        <!--START of Thesaurus Section -->
+		<div id="groupThesaurus" class="parallax__group_noheight flex-container">
+          <div class="title"><u>Essex to Londonderry Translator</u></div>
+          <br/>
+          <div class="flex-item">
+				<div class="row">
+					<div class="col-xs-4 col-md-4">
+                        <div class="body">
+                          <ol>
+                            <li style="list-style: none;" class="title"> Essex </li>
+                            <li style="list-style: none;">Well Ream  </li>
+                            <li style="list-style: none;">Chip off </li>
+                            <li style="list-style: none;">Nice one Bruv  </li>
+                            <li style="list-style: none;">Oi Oi Saveloy!  </li>
+                            <li style="list-style: none;">Top banter </li>
+                            <li style="list-style: none;">Shaaaap!</li>
+                            <li style="list-style: none;">Laura's a sort </li>
+                            <li style="list-style: none;">Ibeefa </li>
+                          </ol>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <div class="body">
+                          <ol style:width="60vw">
+                            <li style="list-style: none;" class="title">Derry  </li>
+                            <li style="list-style: none;">Pure Lefal  </li>
+                            <li style="list-style: none;">Santer</li>
+                            <li style="list-style: none;">Cheers mucker  </li>
+                            <li style="list-style: none;">Bout ye! </li>
+                            <li style="list-style: none;">Craic's ninety</li>
+                            <li style="list-style: none;">howl yer bake!</li>
+                            <li style="list-style: none;">Laura's pure beaut </li>
+                            <li style="list-style: none;">Buncrana </li>
+                          </ol>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <div class="body">
+                          <ol >
+                            <li style="list-style: none;" class="title">Definition</li>
+                            <li style="list-style: none;">"That's lovely"</li>
+                            <li style="list-style: none;">"Go away"</li>
+                            <li style="list-style: none;">"Thank You"</li>
+                            <li style="list-style: none;">"Hello"</li>
+                            <li style="list-style: none;">"I'm having fun" </li>
+                            <li style="list-style: none;">"Please be quiet!"</li>
+                            <li style="list-style: none;">"Laura looks beautiful"</li>
+                            <li style="list-style: none;">Popular holiday destinations. </li>
+                          </ol>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<!--END of Thesaurus Section -->
+
+        <!--START of Speech Sweepstake Section -->
+        <br/>
+        <div id="groupsweep" class="parallax__group_noheight flex-container">
+            <div class="flex-box" >
+                <a href="https://djdilly.typeform.com/to/xgdM5w" target="_blank">
+                  <img src="../img/sweepstake.png"/>
+                </a>
+            </div>
+        </div>
+        <!--END of Speech Sweepstake Section -->
+        <!--START of Gifts Section -->
+        <div id="groupgifts" class="parallax__group_noheight flex-container">
+          <br/>
+          <div class="title"><u>Gifts</u></div>
+          <div class="body">Laura and I recently moved from 2 houses into 1, so we have duplicates of everything! Contributions to our honeymoon would be greatly appreciated. </div>
+        </div>
+        <!--END of Gifts Section -->
+        <!--START of ContactUs Section -->
+        <div id="groupcontactUs" class="parallax__group_noheight flex-container">
+          <br/>
+          <div class="title"><u>Contact us</u></div>
+          <div class="body">If you have any questions please feel free to contact Laura or Chris directly.</div>
+        </div>
+        <!--END of ContactUs Section -->
+        <!--Start of Final Section -->
+        <br/>
+        <br/>
+        <div class="Handwriting">See you there!</div>
+        <br/>
+        <br/>
+        <!--END of Final Section -->
+	</div>
+</body>
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+<script src="js/main.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/parallax.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmtcKKHuckL5-eSuFO7ITb4QLpPpUF0kw&callback=initMap"></script>
+</html>
