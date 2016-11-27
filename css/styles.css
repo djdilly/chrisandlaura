@@ -45,12 +45,12 @@
 .map__button{
   width: 50px;
   height: 50px;
+  font-size: 35px;
   background: #7ab8a0;
   color: #ffffff;
-  font-size: 3.0vh;
   cursor:pointer;
   border-radius: 10px;
-  vertical-align: middle !important;
+  vertical-align: middle;
   margin: 0px;
   display: inline-block;
 }
@@ -62,15 +62,6 @@
 }
 .map__button_repeat {
   padding-top: 4px;
-}
-.glyphicon-play:before {
-  vertical-align: middle !important;
-}
-.glyphicon-repeat:before {
-  vertical-align: middle !important;
-}
-.glyphicon {
-  line-height: inherit !important;
 }
 .ulList{
     list-style-type: none;
@@ -105,12 +96,20 @@
     font-size : 12pt;
 }
 
+#groupTitlePotrait .banner {
+    width: 65vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #groupTitleLandscape .banner {
     width: 65vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 #groupcontactUs{
     text-align:center;
 }
@@ -299,6 +298,9 @@ img.displayed {
 }
 .flex-item-centered {
   width: 100%;
+  text-align: center;
+}
+.center {
   text-align: center;
 }
 
