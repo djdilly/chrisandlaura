@@ -1,3 +1,4 @@
+/*
 a:focus, a:hover {
      color: #fff; 
      text-decoration: none; 
@@ -14,8 +15,13 @@ a:focus, a:hover {
 }
 
 
+*/
 
-
+.container{
+    font-family: 'georgia', arial;
+    color: #98988A;
+    font-size: 120%;
+}
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)

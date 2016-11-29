@@ -1,0 +1,107 @@
+/*
+Images START
+*/
+
+#hotel_photo {
+    background: url(../img/braxted.jpg) no-repeat bottom center;
+    background-size: cover;
+    height: 600px;
+}
+
+.address img{
+    
+}
+
+/*
+Images END
+*/
+
+
+/*
+Lists START
+*/
+
+.address li {
+    list-style-type: none;
+}
+
+.translator li {
+    list-style-type: none;
+}
+
+.li_title {
+    font-weight: bold;
+}
+
+
+/*
+Lists END
+*/
+
+
+/*
+Fonts START
+*/
+
+.Handwriting {
+    text-align: Center;
+    font-size: 60pt;
+    font-family: 'Dancing Script', cursive;
+    color: #98988A;
+}
+
+.text_title {
+    text-align: center;
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+    color: #7F7F70;
+    font-size: 30pt;
+    font-style: underline;
+}
+
+p {
+    text-align: justify;
+}
+
+.title-braxted {
+    text-align: center;
+    font-family: 'Playball', cursive;
+    font-weight: bold;
+    color: #7F7F70;
+    font-size: 18pt;
+    padding-top: 10px;
+}
+
+
+/*
+Fonts END
+*/
+
+
+/* 
+Positioning START
+*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center_text
+{
+    text-align: center;
+}
+
+#header-content {
+    
+    height: 80vh;
+   
+    padding-top: 30vh;
+}
+
+
+
+
+/* 
+Positioning END
+*/
