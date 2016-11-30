@@ -1,27 +1,59 @@
-$(window).load(function() {
-  //relative borders on polaroids
-  var el = $(".square");
-  var borderWidth = el.width() / 32 | 0; // calculate & trim decimals
-  var borderBottomWidth = borderWidth * 5
-  el.css("border-width", borderWidth + "px");
-  el.css("border-bottom-width", borderBottomWidth + "px");
-  var el2 = $(".sq-footer");
-  el2.css("bottom", "-" + borderWidth * 4 + "px");
-  el2.css("font", borderWidth * 2 + "px 'Kaushan Script', cursive");
+(function($) {
+  
+  $.fn.visible = function(partial) {
 
-  // animation initialization
+        var $t            = $(this),
+            $w            = $(window),
+            viewTop       = $w.scrollTop(),
+            viewBottom    = viewTop + ($w.height() * 0.5),
+            _top          = $t.offset().top,
+            _bottom       = _top + $t.height(),
+            compareTop    = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+      return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+    
+})(jQuery);
+
+var win = $(window);
+var allMods = $(".waiting-to-appear");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+
+
+$(window).load(function() {
   var halfHeight = $(window).height() / 2;
-  var halfHeightMinusLogo = ($(window).height() - 285) / 2;
-  //initialize scrollreveal
+  var halfHeightMinusLogo = ($(window).height() - $("#logo").height()) * 0.4;
+  $("#header-content").css("padding-top", halfHeightMinusLogo);
+  
   window.sr = ScrollReveal({
     // 'bottom', 'left', 'top', 'right'
     origin: 'bottom',
 
     // Can be any valid CSS distance, e.g. '5rem', '10%', '20vw', etc.
-    distance: '5vw',
+    distance: '20px',
 
     // Time in milliseconds.
-    duration: 100,
+    duration: 900,
     delay: 0,
 
     // Starting angles in degrees, will transition from these values to 0 in all axes.
@@ -34,7 +66,7 @@ $(window).load(function() {
     scale: 1,
 
     // Accepts any valid CSS easing, e.g. 'ease', 'ease-in-out', 'linear', etc.
-    easing: 'cubic-bezier(0.075, 0.82, 0.165, 1)',
+    easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
 
     // `<html>` is the default reveal container. You can pass either:
     // DOM Node, e.g. document.querySelector('.fooContainer')
@@ -61,7 +93,7 @@ $(window).load(function() {
     // e.g. Set `{ top: 48 }`, if you have a 48px tall fixed toolbar.
     // --
     // Visual Aid: https://scrollrevealjs.org/assets/viewoffset.png
-    viewOffset: { top: 0, right: 0, bottom: halfHeight, left: 0 },
+    viewOffset: { top: -1000, right: 0, bottom: halfHeight, left: 0 },
 
     // Callbacks that fire for each triggered element reveal, and reset.
     beforeReveal: function (domEl) {},
@@ -71,12 +103,6 @@ $(window).load(function() {
     afterReveal: function (domEl) {},
     afterReset: function (domEl) {}
   });
-
-  sr.reveal('.sr', {  duration: "4000" });
-  $(".sr").css("visibility","visible");
-
-//   window.onresize = function(){ location.reload(); }
-
+  sr.reveal('#topContent');
+  sr.reveal('.title-braxted');
 });
-
-

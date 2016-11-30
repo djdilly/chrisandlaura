@@ -93,10 +93,7 @@ Positioning START
 }
 
 #header-content {
-    
-    height: 80vh;
-   
-    padding-top: 30vh;
+    padding-bottom: 100px;
 }
 
 
@@ -104,4 +101,35 @@ Positioning START
 
 /* 
 Positioning END
+*/
+
+
+/* 
+Appear START
+*/
+
+/* .waiting-to-appear {
+  opacity: 0;
+}
+
+.come-in {
+  transform: translateY(50px); 
+   animation: come-in 0.7s ease forwards; 
+   opacity: 1;
+   transition: opacity 0.7s ease-in-out;
+   -moz-transition: opacity 0.7s ease-in-out;
+   -webkit-transition: opacity 0.7s ease-in-out; 
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+} */
+
+/*
+Appear END
 */
