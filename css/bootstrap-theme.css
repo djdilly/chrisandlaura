@@ -1,9 +1,10 @@
-/*
+
 a:focus, a:hover {
      color: #fff; 
      text-decoration: none; 
 }
 
+/*
 .glyphicon-play:before {
   vertical-align: middle;
 }
@@ -13,8 +14,6 @@ a:focus, a:hover {
 .glyphicon {
   line-height: inherit;
 }
-
-
 */
 
 .container{

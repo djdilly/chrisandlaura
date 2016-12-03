@@ -1,50 +1,9 @@
-(function($) {
-  
-  $.fn.visible = function(partial) {
-
-        var $t            = $(this),
-            $w            = $(window),
-            viewTop       = $w.scrollTop(),
-            viewBottom    = viewTop + ($w.height() * 0.5),
-            _top          = $t.offset().top,
-            _bottom       = _top + $t.height(),
-            compareTop    = partial === true ? _bottom : _top,
-            compareBottom = partial === true ? _top : _bottom;
-
-      return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-  };
-    
-})(jQuery);
-
-var win = $(window);
-var allMods = $(".waiting-to-appear");
-
-// Already visible modules
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible"); 
-  } 
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } 
-  });
-  
-});
-
-
 $(window).load(function() {
-  var halfHeight = $(window).height() / 2;
+  var halfHeight = $(window).height() / 4;
   var halfHeightMinusLogo = ($(window).height() - $("#logo").height()) * 0.4;
   $("#header-content").css("padding-top", halfHeightMinusLogo);
-  
+  $("#map").css("height", $(window).height() * 0.8 + "px");
+
   window.sr = ScrollReveal({
     // 'bottom', 'left', 'top', 'right'
     origin: 'bottom',
@@ -57,7 +16,11 @@ $(window).load(function() {
     delay: 0,
 
     // Starting angles in degrees, will transition from these values to 0 in all axes.
-    rotate: { x: 0, y: 0, z: 0 },
+    rotate: {
+      x: 0,
+      y: 0,
+      z: 0
+    },
 
     // Starting opacity value, before transitioning to the computed opacity.
     opacity: 0,
@@ -93,15 +56,20 @@ $(window).load(function() {
     // e.g. Set `{ top: 48 }`, if you have a 48px tall fixed toolbar.
     // --
     // Visual Aid: https://scrollrevealjs.org/assets/viewoffset.png
-    viewOffset: { top: -1000, right: 0, bottom: halfHeight, left: 0 },
+    viewOffset: {
+      top: -1000,
+      right: 0,
+      bottom: halfHeight,
+      left: 0
+    },
 
     // Callbacks that fire for each triggered element reveal, and reset.
-    beforeReveal: function (domEl) {},
-    beforeReset: function (domEl) {},
+    beforeReveal: function(domEl) {},
+    beforeReset: function(domEl) {},
 
     // Callbacks that fire for each completed element reveal, and reset.
-    afterReveal: function (domEl) {},
-    afterReset: function (domEl) {}
+    afterReveal: function(domEl) {},
+    afterReset: function(domEl) {}
   });
   sr.reveal('#topContent');
   sr.reveal('.title-braxted');

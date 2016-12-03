@@ -3,14 +3,13 @@ Images START
 */
 
 #hotel_photo {
-    background: url(../img/braxted.jpg) no-repeat bottom center;
-    background-size: cover;
-    height: 600px;
+  background: url(../img/braxted.jpg) no-repeat bottom center;
+  background-size: cover;
+  height: 600px;
 }
 
-.address img{
-    
-}
+.address img {}
+
 
 /*
 Images END
@@ -22,15 +21,15 @@ Lists START
 */
 
 .address li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .translator li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .li_title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
@@ -44,32 +43,32 @@ Fonts START
 */
 
 .Handwriting {
-    text-align: Center;
-    font-size: 60pt;
-    font-family: 'Dancing Script', cursive;
-    color: #98988A;
+  text-align: Center;
+  font-size: 60pt;
+  font-family: 'Dancing Script', cursive;
+  color: #98988A;
 }
 
 .text_title {
-    text-align: center;
-    font-family: 'Playball', cursive;
-    font-weight: bold;
-    color: #7F7F70;
-    font-size: 30pt;
-    font-style: underline;
+  text-align: center;
+  font-family: 'Playball', cursive;
+  font-weight: bold;
+  color: #7F7F70;
+  font-size: 30pt;
+  font-style: underline;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .title-braxted {
-    text-align: center;
-    font-family: 'Playball', cursive;
-    font-weight: bold;
-    color: #7F7F70;
-    font-size: 18pt;
-    padding-top: 10px;
+  text-align: center;
+  font-family: 'Playball', cursive;
+  font-weight: bold;
+  color: #7F7F70;
+  font-size: 18pt;
+  padding-top: 10px;
 }
 
 
@@ -83,20 +82,18 @@ Positioning START
 */
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.center_text
-{
-    text-align: center;
+
+.center_text {
+  text-align: center;
 }
 
 #header-content {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
-
-
 
 
 /* 
@@ -104,32 +101,63 @@ Positioning END
 */
 
 
-/* 
-Appear START
+/*
+Controls START
 */
 
-/* .waiting-to-appear {
-  opacity: 0;
+.button {
+  width: 150px;
+  height: 150px;
+  background: #7ab8a0;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 20px 30px;
+  border-style: solid;
+  border-width: 2px;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: 'Rochester', arial;
 }
 
-.come-in {
-  transform: translateY(50px); 
-   animation: come-in 0.7s ease forwards; 
-   opacity: 1;
-   transition: opacity 0.7s ease-in-out;
-   -moz-transition: opacity 0.7s ease-in-out;
-   -webkit-transition: opacity 0.7s ease-in-out; 
+.button:hover {
+  background: #e8d1d9;
 }
 
-.already-visible {
-  transform: translateY(0);
-  animation: none;
+.map__button:hover {
+  background: #acd2c4;
 }
-
-@keyframes come-in {
-  to { transform: translateY(0); }
-} */
+.map__button_play {
+  padding-top: 1px;
+}
+.map__button_repeat {
+  padding-top: 4px;
+}
 
 /*
-Appear END
+Controls END
+*/
+
+
+/* 
+Google Map START
+*/
+
+.map {
+    border: 3px solid #7F7F70;
+    width: 100%;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+/* 
+Google Map END
 */
