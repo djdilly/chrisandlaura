@@ -2,7 +2,6 @@ $(window).load(function() {
   var halfHeight = $(window).height() / 4;
   var halfHeightMinusLogo = ($(window).height() - $("#logo").height()) * 0.4;
   $("#header-content").css("padding-top", halfHeightMinusLogo);
-  $("#map").css("height", $(window).height() * 0.8 + "px");
 
   window.sr = ScrollReveal({
     // 'bottom', 'left', 'top', 'right'

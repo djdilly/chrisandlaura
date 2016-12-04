@@ -6,7 +6,9 @@
 
       //google maps initialisation
       function initMap() {
+        $("#map").css("height", $(window).height() * 0.8 + "px");
         var mapDiv = document.getElementById('map');
+
         var myCenterLatLng = {
           lat: 54.5945324,
           lng: -4.5
@@ -47,16 +49,16 @@
 
         // Setup the slider event listener
         $("#loveStorySlider").change(function() {
-          $("#floating-inner").attr("hidden","hidden")
-          
+          $("#floating-inner").attr("hidden", "hidden")
+
           var currentMarkerIndex = document.getElementById("loveStorySlider").value
-          
+
           //sloppy lazy coding for displaying correct map label
           for (var i = 0; i < document.getElementById("loveStorySlider").max; i++) {
             $("#" + i).attr("hidden", "hidden");
           }
           $("#" + currentMarkerIndex).removeAttr("hidden");
-          
+
           var currentZoom = map.getZoom()
           var newZoom, newLat, newLng
 
@@ -69,23 +71,20 @@
               panTo(newLat, newLng)
             }, 1000);
             drop()
-          }
-          else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4)  {
+          } else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4) {
             newLat = 54.5945324
             newLng = -7.66945572
             newZoom = 9
             if (currentZoom > newZoom) {
               smoothZoomOut(map, newZoom, currentZoom)
-            }
-            else {
+            } else {
               smoothZoom(map, newZoom, currentZoom)
             }
             setTimeout(function() {
               panTo(newLat, newLng)
             }, 1000);
             drop()
-          }
-          else if (currentMarkerIndex == 5) {
+          } else if (currentMarkerIndex == 5) {
             newLat = 51.806100
             newLng = 0.6891120
             panTo(newLat, newLng)
@@ -95,8 +94,7 @@
               smoothZoom(map, newZoom, currentZoom)
             }, 2000);
             drop()
-          }
-          else {
+          } else {
             $("#floating-inner").removeAttr("hidden")
           }
 
@@ -114,24 +112,24 @@
 
       function drop() {
         deleteMarkers()
-        
+
         var newMarkerIndex = document.getElementById("loveStorySlider").value - 1
 
         if (newMarkerIndex > -1) { //avoid out of bounds exception
           var feature = features[parseInt(newMarkerIndex)]
 
           // if (isLocationFree(feature.position)) { //don't add a marker more than once
-            // add new marker to page
-            markers.push(new google.maps.Marker({
-              position: feature.position,
-              icon: {
-                url: icons[feature.type].icon,
-                scaledSize: new google.maps.Size(40, 48)
-              },
-              title: feature.title,
-              map: map,
-              animation: google.maps.Animation.BOUNCE
-            }));
+          // add new marker to page
+          markers.push(new google.maps.Marker({
+            position: feature.position,
+            icon: {
+              url: icons[feature.type].icon,
+              scaledSize: new google.maps.Size(40, 48)
+            },
+            title: feature.title,
+            map: map,
+            animation: google.maps.Animation.BOUNCE
+          }));
           // }
         }
       }
@@ -140,8 +138,7 @@
       function smoothZoom(map, max, cnt) {
         if (cnt >= max) {
           return;
-        }
-        else {
+        } else {
           z = google.maps.event.addListener(map, 'zoom_changed', function(event) {
             google.maps.event.removeListener(z);
             smoothZoom(map, max, cnt + 1);
@@ -155,8 +152,7 @@
       function smoothZoomOut(map, min, cnt) {
         if (cnt < min - 1) {
           return;
-        }
-        else {
+        } else {
           z = google.maps.event.addListener(map, 'zoom_changed', function(event) {
             google.maps.event.removeListener(z);
             smoothZoomOut(map, min, cnt - 1);
@@ -175,8 +171,7 @@
         if (panPath.length > 0) {
           // We are already panning...queue this up for next move
           panQueue.push([newLat, newLng]);
-        }
-        else {
+        } else {
           // Lets compute the points we'll use
           panPath.push("LAZY SYNCRONIZED LOCK"); // make length non-zero - 'release' this before calling setTimeout
           var curLat = map.getCenter().lat();
@@ -199,8 +194,7 @@
           // Continue our current pan action
           map.panTo(new google.maps.LatLng(next[0], next[1]));
           setTimeout(doPan, 20);
-        }
-        else {
+        } else {
           // We are finished with this pan - check if there are any queue'd up locations to pan to
           var queued = panQueue.shift();
           if (queued != null) {
@@ -208,19 +202,19 @@
           }
         }
       }
-      
+
       // Sets the map on all markers in the array.
       function setMapOnAll(map) {
         for (var i = 0; i < markers.length; i++) {
           markers[i].setMap(map);
         }
       }
-      
+
       // Removes the markers from the map, but keeps them in the array.
       function clearMarkers() {
         setMapOnAll(null);
       }
-      
+
       // Deletes all markers in the array by removing references to them.
       function deleteMarkers() {
         clearMarkers();
@@ -315,4 +309,3 @@
           icon: paddleBase + 'orange-blank.png'
         }
       }
-      

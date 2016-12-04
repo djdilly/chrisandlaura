@@ -71,6 +71,15 @@ p {
   padding-top: 10px;
 }
 
+.title-braxted> a {
+  color: #619380;
+}
+
+.title-braxted> a:focus,
+.title-braxted> a:hover {
+  color: #F5ECEF;
+}
+
 
 /*
 Fonts END
@@ -124,15 +133,31 @@ Controls START
   background: #e8d1d9;
 }
 
+.map__button {
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  background: #7ab8a0;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin: 0px;
+  display: inline-block;
+}
+
 .map__button:hover {
   background: #acd2c4;
 }
+
 .map__button_play {
-  padding-top: 1px;
+  /*   padding-top: 1px; */
 }
+
 .map__button_repeat {
-  padding-top: 4px;
+  padding-top: 2px;
 }
+
 
 /*
 Controls END
@@ -144,20 +169,78 @@ Google Map START
 */
 
 .map {
-    border: 3px solid #7F7F70;
-    width: 100%;
+  border: 3px solid #7F7F70;
+  width: 100%;
 }
 
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
-
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-    display:none;
+a[href^="http://maps.google.com/maps"] {
+  display: none !important
 }
+
+a[href^="https://maps.google.com/maps"] {
+  display: none !important
+}
+
+.gmnoprint a,
+.gmnoprint span,
+.gm-style-cc {
+  display: none;
+}
+
 .gmnoprint div {
-    background:none !important;
+  background: none !important;
 }
+
+#floating-panel {
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 6vh;
+}
+
+#floating-inner {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 3px solid #7F7F70;
+  font-family: 'Playball', cursive;
+  color: #7F7F70;
+}
+
 
 /* 
 Google Map END
+*/
+
+
+/* 
+Trip Advisor START
+*/
+
+.tripadvisor img {
+  vertical-align: initial;
+}
+
+
+/* 
+Trip Advisor END
+*/
+
+
+/* 
+List START
+*/
+
+.ulList {
+  padding-left: 0px;
+}
+
+
+/* 
+Lists End
 */

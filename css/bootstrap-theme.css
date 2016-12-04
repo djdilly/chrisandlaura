@@ -4,17 +4,17 @@ a:focus, a:hover {
      text-decoration: none; 
 }
 
-/*
 .glyphicon-play:before {
   vertical-align: middle;
 }
+
 .glyphicon-repeat:before {
   vertical-align: middle;
 }
+
 .glyphicon {
   line-height: inherit;
 }
-*/
 
 .container{
     font-family: 'georgia', arial;
