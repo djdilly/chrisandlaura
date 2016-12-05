@@ -158,9 +158,6 @@ Controls START
   padding-top: 2px;
 }
 
-#loveStorySlider {
-  display: none;
-}
 
 /*
 Controls END
@@ -216,7 +213,10 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 #map-hold-all-elements {
-  position: relative; /* necessary for floating-panel to float correctly */
+  /* necessary for floating-panel to float correctly */
+  position: relative;
+  /* space from above */
+  margin-top: 10px;
 }
 
 

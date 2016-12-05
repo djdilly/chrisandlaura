@@ -10,7 +10,7 @@
 
         $("#play").click(function() {
           var currentMarkerIndex = parseInt(document.getElementById("loveStorySlider").value);
-          if (currentMarkerIndex < 12) {
+          if (currentMarkerIndex < 8) {
             document.getElementById("loveStorySlider").value = currentMarkerIndex + 1;
             currentMarkerChange();
           }
@@ -37,26 +37,27 @@
           styles: mapStyles
         });
 
-        features = [{
-          position: new google.maps.LatLng(55.0066605, -7.3467505),
-          type: 'blue',
-          title: 'Chris Lived here'
-        }, {
-          position: new google.maps.LatLng(54.4176703, -8.4850056),
-          type: 'horse',
-          title: 'Chris fell off a horse here, the day he proposed.'
+        features = [{}, {
+          position: new google.maps.LatLng(54.9987284, -7.2735361),
+          type: 'blue'
         }, {
           position: new google.maps.LatLng(54.3470806, -7.6398836),
-          type: 'pink',
-          title: 'Laura Lived here'
+          type: 'pink'
+        }, {
+          position: new google.maps.LatLng(54.3470806, -7.6398836),
+          type: 'pink'
+        }, {
+          position: new google.maps.LatLng(54.4176703, -8.4850056),
+          type: 'horse'
         }, {
           position: new google.maps.LatLng(54.6019787, -7.3299775),
-          type: 'orange',
-          title: 'Chris and Laura now live here'
+          type: 'orange'
+        }, {
+          position: new google.maps.LatLng(51.7341054, 0.4695787),
+          type: 'blue'
         }, {
           position: new google.maps.LatLng(51.806100, 0.6891120),
-          type: 'orange',
-          title: 'Wedding venue'
+          type: 'blue'
         }]
 
         icons = mapIcons;
@@ -85,7 +86,7 @@
             panTo(newLat, newLng)
           }, 1000);
           drop()
-        } else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4) {
+        } else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4 || currentMarkerIndex == 5) {
           newLat = 54.5945324
           newLng = -7.66945572
           newZoom = 9
@@ -97,8 +98,22 @@
           setTimeout(function() {
             panTo(newLat, newLng)
           }, 1000);
-          drop()
-        } else if (currentMarkerIndex == 5) {
+          setTimeout(function() {
+            drop()
+          }, 1000);
+        } else if (currentMarkerIndex == 6) {
+          newLat = 51.7341054
+          newLng = 0.4695787
+          panTo(newLat, newLng)
+          setTimeout(function() {
+            currentMarkerIndex = document.getElementById("loveStorySlider").value
+            newZoom = 14
+            smoothZoom(map, newZoom, currentZoom)
+          }, 2000);
+          setTimeout(function() {
+            drop()
+          }, 2000);
+        } else if (currentMarkerIndex == 7) {
           newLat = 51.806100
           newLng = 0.6891120
           panTo(newLat, newLng)
@@ -107,8 +122,11 @@
             newZoom = 14
             smoothZoom(map, newZoom, currentZoom)
           }, 2000);
-          drop()
+          setTimeout(function() {
+            drop()
+          }, 1000);
         } else {
+          deleteMarkers()
           $("#floating-inner").removeAttr("hidden")
         }
 
@@ -126,24 +144,29 @@
       function drop() {
         deleteMarkers()
 
-        var newMarkerIndex = document.getElementById("loveStorySlider").value - 1
+        var newMarkerIndex = document.getElementById("loveStorySlider").value
 
-        if (newMarkerIndex > -1) { //avoid out of bounds exception
+        if (newMarkerIndex > 0) { //avoid out of bounds exception
           var feature = features[parseInt(newMarkerIndex)]
 
           // if (isLocationFree(feature.position)) { //don't add a marker more than once
           // add new marker to page
+
           markers.push(new google.maps.Marker({
             position: feature.position,
             icon: {
               url: icons[feature.type].icon,
               scaledSize: new google.maps.Size(40, 48)
             },
-            title: feature.title,
-            map: map,
-            animation: google.maps.Animation.BOUNCE
+            map: map
+              //             ,animation: google.maps.Animation.BOUNCE
           }));
-          // }
+          var contentString = $("#" + document.getElementById("loveStorySlider").value).html();
+          var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+
+          infowindow.open(map, markers[0]);
         }
       }
 
