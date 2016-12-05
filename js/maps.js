@@ -7,6 +7,20 @@
       //google maps initialisation
       function initMap() {
         $("#map").css("height", $(window).height() * 0.8 + "px");
+
+        $("#play").click(function() {
+          var currentMarkerIndex = parseInt(document.getElementById("loveStorySlider").value);
+          if (currentMarkerIndex < 12) {
+            document.getElementById("loveStorySlider").value = currentMarkerIndex + 1;
+            currentMarkerChange();
+          }
+        })
+
+        $("#repeat").click(function() {
+          document.getElementById("loveStorySlider").value = 0;
+          currentMarkerChange();
+        })
+
         var mapDiv = document.getElementById('map');
 
         var myCenterLatLng = {
@@ -46,59 +60,58 @@
         }]
 
         icons = mapIcons;
+      }
 
-        // Setup the slider event listener
-        $("#loveStorySlider").change(function() {
-          $("#floating-inner").attr("hidden", "hidden")
+      function currentMarkerChange() {
+        $("#floating-inner").attr("hidden", "hidden")
 
-          var currentMarkerIndex = document.getElementById("loveStorySlider").value
+        var currentMarkerIndex = document.getElementById("loveStorySlider").value
 
-          //sloppy lazy coding for displaying correct map label
-          for (var i = 0; i < document.getElementById("loveStorySlider").max; i++) {
-            $("#" + i).attr("hidden", "hidden");
-          }
-          $("#" + currentMarkerIndex).removeAttr("hidden");
+        //sloppy lazy coding for displaying correct map label
+        for (var i = 0; i < document.getElementById("loveStorySlider").max; i++) {
+          $("#" + i).attr("hidden", "hidden");
+        }
+        $("#" + currentMarkerIndex).removeAttr("hidden");
 
-          var currentZoom = map.getZoom()
-          var newZoom, newLat, newLng
+        var currentZoom = map.getZoom()
+        var newZoom, newLat, newLng
 
-          if (currentMarkerIndex == 0) {
-            newLat = 54.5945324
-            newLng = -4.5
-            newZoom = 7
-            smoothZoomOut(map, newZoom, currentZoom)
-            setTimeout(function() {
-              panTo(newLat, newLng)
-            }, 1000);
-            drop()
-          } else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4) {
-            newLat = 54.5945324
-            newLng = -7.66945572
-            newZoom = 9
-            if (currentZoom > newZoom) {
-              smoothZoomOut(map, newZoom, currentZoom)
-            } else {
-              smoothZoom(map, newZoom, currentZoom)
-            }
-            setTimeout(function() {
-              panTo(newLat, newLng)
-            }, 1000);
-            drop()
-          } else if (currentMarkerIndex == 5) {
-            newLat = 51.806100
-            newLng = 0.6891120
+        if (currentMarkerIndex == 0) {
+          newLat = 54.5945324
+          newLng = -4.5
+          newZoom = 7
+          smoothZoomOut(map, newZoom, currentZoom)
+          setTimeout(function() {
             panTo(newLat, newLng)
-            setTimeout(function() {
-              currentMarkerIndex = document.getElementById("loveStorySlider").value
-              newZoom = 14
-              smoothZoom(map, newZoom, currentZoom)
-            }, 2000);
-            drop()
+          }, 1000);
+          drop()
+        } else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4) {
+          newLat = 54.5945324
+          newLng = -7.66945572
+          newZoom = 9
+          if (currentZoom > newZoom) {
+            smoothZoomOut(map, newZoom, currentZoom)
           } else {
-            $("#floating-inner").removeAttr("hidden")
+            smoothZoom(map, newZoom, currentZoom)
           }
+          setTimeout(function() {
+            panTo(newLat, newLng)
+          }, 1000);
+          drop()
+        } else if (currentMarkerIndex == 5) {
+          newLat = 51.806100
+          newLng = 0.6891120
+          panTo(newLat, newLng)
+          setTimeout(function() {
+            currentMarkerIndex = document.getElementById("loveStorySlider").value
+            newZoom = 14
+            smoothZoom(map, newZoom, currentZoom)
+          }, 2000);
+          drop()
+        } else {
+          $("#floating-inner").removeAttr("hidden")
+        }
 
-        });
       }
 
       function isLocationFree(search) {

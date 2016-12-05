@@ -29,34 +29,26 @@
     <br />
     <div class="text_title">Relationship Timeline</div>
     <div class="center_text">
-      <span class="glyphicon glyphicon-play map__button map__button_play" aria-hidden="true"></span>
-      <span class="glyphicon glyphicon-repeat map__button map__button_repeat" aria-hidden="true"></span>
+      <span id="play" class="glyphicon glyphicon-play map__button map__button_play" aria-hidden="true"></span>
+      <span id="repeat" class="glyphicon glyphicon-repeat map__button map__button_repeat" aria-hidden="true"></span>
       <input type="range" id="loveStorySlider" min="0" max="12" value="0" />
     </div>
     <div>
-      <label id="0" hidden>1983 to Present - Laura and Chris' Love Story</label>
+<!--       <label id="0">1983 to Present - Laura and Chris' Love Story</label> -->
       <!--UK-->
-      <label id="1">Chris is from here</label>
+      <label id="1">4th October 2012- Laura and Chris met</label>
       <!--UK-->
-      <label id="2" hidden>Laura is from here</label>
+      <label id="2">February 2013 - Laura moved to Irvinestown</label>
       <!--UK-->
-      <label id="3" hidden>7th January 2011 - Laura moved to Northern Ireland </label>
+      <label id="3">15th August 2015 - Chris proposed to Laura on her 31st Birthday</label>
       <!--NIW-->
-      <label id="4" hidden>4th October 2012 - Laura and Chris met</label>
+      <label id="4">...same day - Chris falls off a horse the first time he went riding with Laura</label>
       <!--NIW-->
-      <label id="5" hidden>25th March 2013 - Laura moved to Irvinestown</label>
+      <label id="5">16th February 2016 - Laura and Chris move to Omagh</label>
       <!--NIW-->
-      <label id="6" hidden>15th August 2015 - Chris proposed to Laura on her 31st Birthday</label>
+      <label id="6">16th April 2016 - Chris, Family and Friends decend on Chelmsford</label>
       <!--NIW-->
-      <label id="7" hidden>15th August 2015 - Chris fell off a horse the first time he went riding with Laura</label>
-      <!--NIW-->
-      <label id="8" hidden>16th February 2016 - Laura and Chris move to Omagh</label>
-      <!--NIW-->
-      <label id="9" hidden>16th April 2016 - Chris, Family and Friends decend on Chelmsford</label>
-      <!--CHM-->
-      <label id="10" hidden>17th April 2017 - Laura and Chris' Wedding in Braxted Park</label>
-      <!--CHM-->
-      <label id="11" hidden>More coming soon...?</label>
+      <label id="7">17th April 2017 - Laura and Chris' Wedding in Braxted Park</label>
       <!--UK-->
       <!--
           Dates for Time line.
@@ -71,7 +63,12 @@
        -->
     </div>
     <input type="hidden" id="currentMarker" value="0" />
-    <div id="map" class="map"></div>
+    <div id="map-hold-all-elements">
+      <div id="floating-panel">
+        <div id="floating-inner" hidden> And they lived happily ever after </div>
+      </div>
+      <div id="map" class="map"></div>
+    </div>
   </div>
   </div>
   <br />

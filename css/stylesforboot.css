@@ -158,6 +158,9 @@ Controls START
   padding-top: 2px;
 }
 
+#loveStorySlider {
+  display: none;
+}
 
 /*
 Controls END
@@ -200,16 +203,20 @@ a[href^="https://maps.google.com/maps"] {
   padding: 5px;
   text-align: center;
   font-family: 'Roboto', 'sans-serif';
-  font-size: 6vh;
+  font-size: 4rem;
 }
 
 #floating-inner {
-  width: 40%;
+  width: 70%;
   margin: 0 auto;
   background-color: #fff;
   border: 3px solid #7F7F70;
   font-family: 'Playball', cursive;
   color: #7F7F70;
+}
+
+#map-hold-all-elements {
+  position: relative; /* necessary for floating-panel to float correctly */
 }
 
 
