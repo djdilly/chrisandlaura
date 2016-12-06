@@ -3,9 +3,16 @@
       var features = []
       var iconBase
       var icons
+      var extraZoom
 
       //google maps initialisation
       function initMap() {
+        testExp = new RegExp('Android|webOS|iPhone|iPad|' +
+          'BlackBerry|Windows Phone|' +
+          'Opera Mini|IEMobile|Mobile',
+          'i');
+        extraZoom = testExp.test(navigator.userAgent) ? -1 : 0;
+
         $("#map").css("height", $(window).height() * 0.8 + "px");
 
         $("#play").click(function() {
@@ -30,7 +37,7 @@
 
         map = new google.maps.Map(mapDiv, {
           center: myCenterLatLng,
-          zoom: 6,
+          zoom: 6 + extraZoom,
           disableDefaultUI: true,
           draggable: false,
           scrollwheel: false,
@@ -80,7 +87,7 @@
         if (currentMarkerIndex == 0) {
           newLat = 54.5945324
           newLng = -4.5
-          newZoom = 7
+          newZoom = 7 + extraZoom
           smoothZoomOut(map, newZoom, currentZoom)
           setTimeout(function() {
             panTo(newLat, newLng)
@@ -89,7 +96,11 @@
         } else if (currentMarkerIndex == 1 || currentMarkerIndex == 2 || currentMarkerIndex == 3 || currentMarkerIndex == 4 || currentMarkerIndex == 5) {
           newLat = 54.5945324
           newLng = -7.66945572
-          newZoom = 9
+          if (extraZoom != 0) {
+            newZoom = 9 + extraZoom - 1
+          } else {
+            newZoom = 9
+          }
           if (currentZoom > newZoom) {
             smoothZoomOut(map, newZoom, currentZoom)
           } else {
@@ -107,7 +118,7 @@
           panTo(newLat, newLng)
           setTimeout(function() {
             currentMarkerIndex = document.getElementById("loveStorySlider").value
-            newZoom = 14
+            newZoom = 14 + extraZoom
             smoothZoom(map, newZoom, currentZoom)
           }, 2000);
           setTimeout(function() {
@@ -119,7 +130,7 @@
           panTo(newLat, newLng)
           setTimeout(function() {
             currentMarkerIndex = document.getElementById("loveStorySlider").value
-            newZoom = 14
+            newZoom = 14 + extraZoom
             smoothZoom(map, newZoom, currentZoom)
           }, 2000);
           setTimeout(function() {
@@ -161,9 +172,12 @@
             map: map
               //             ,animation: google.maps.Animation.BOUNCE
           }));
+
+          var maxWidth = extraZoom == -1 ? 100 : 200;
           var contentString = $("#" + document.getElementById("loveStorySlider").value).html();
           var infowindow = new google.maps.InfoWindow({
-            content: contentString
+            content: contentString,
+            maxWidth: maxWidth
           });
 
           infowindow.open(map, markers[0]);
