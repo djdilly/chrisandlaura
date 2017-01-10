@@ -72,4 +72,6 @@ $(window).load(function() {
   });
   sr.reveal('#topContent');
   sr.reveal('.title-braxted');
+  
+  $('body').css('overflow','auto');
 });
